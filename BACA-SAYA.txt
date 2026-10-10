@@ -1,0 +1,73 @@
+BELON TEORI MUZIK AR — v4 (Web App + PWA + Admin Guru)
+Pendidikan Muzik & Seni Muzik KSSM · Teori Muzik
+=====================================================================
+
+KANDUNGAN FOLDER (muat naik SEMUA bersama)
+  index.html              aplikasi
+  firebase-config.js      tetapan Firebase (kosong = Mod Peranti)
+  firestore.rules         peraturan keselamatan Firebase
+  js/                     kod aplikasi (permainan, admin, data, laporan)
+  lib/                    pustaka (A-Frame, jsPDF, Excel, pembaca PDF/DOCX, QR)
+  data/soalan-lalai.json  312 soalan Bank Umum terbina
+  sw.js, manifest.webmanifest, icons/   PWA (pasang & luar talian)
+  PANDUAN-FIREBASE.txt    cara sambung Firebase (kelas PdPR jarak jauh)
+  SEMAKAN-SKEMA.txt       skema jawapan yang dibetulkan
+
+1) TERBITKAN
+  GitHub Pages: lihat README.md (langkah demi langkah)
+  ATAU https://app.netlify.com/drop → seret SELURUH folder → dapat pautan https://
+  Kamera & mikrofon hanya berfungsi melalui https:// (atau localhost).
+
+2) DUA MOD
+  🟠 Mod Peranti (tanpa Firebase) — terus boleh guna.
+     Tetapan, soalan guru & skor disimpan dalam peranti itu sahaja.
+     Sesuai untuk komputer/tablet kelas yang dikongsi murid.
+  🟢 Mod Dalam Talian (Firebase) — untuk PdPR. Lihat PANDUAN-FIREBASE.txt.
+     Guru cipta KOD KELAS → kongsi pautan/QR → murid main di rumah →
+     skor masuk ke panel guru.
+
+3) ADMIN GURU  (skrin utama → "⚙️ Admin Guru", kata laluan: dzurri)
+  🏫 Kelas & Sekolah : nama sekolah, nama guru, logo, senarai kelas,
+                       set soalan yang dibenarkan, bilangan soalan, masa,
+                       rekod skor, kod kelas + pautan + QR.
+  📄 Soalan Guru     : muat naik PDF/DOCX → soalan dijana automatik →
+                       semak/edit jawapan → Simpan. Boleh tambah manual.
+  📊 Skor Murid      : jadual skor, tapis ikut kelas/set,
+                       ⬇️ Excel (Skor + Ringkasan Kelas + Analisis Soalan),
+                       ⬇️ PDF, dan 📄 PDF semakan setiap murid.
+  🌐 Bank Umum       : (Pentadbir Utama) urus soalan untuk semua guru.
+
+4) FORMAT FAIL SOALAN (PDF / DOCX)
+     SET 1                         ← pilihan
+     1. Apakah maksud staccato?
+        A. Kuat
+        B. Pendek dan terputus
+        C. Lembut
+        D. Perlahan
+     Jawapan: B                    ← ATAU guna skema di akhir dokumen:
+     SKEMA JAWAPAN
+     Set 1
+     1. B 2. C 3. A …
+  - Pilihan boleh sebaris: "A. 2  B. 3  C. 4  D. 6"
+  - Soalan bergambar (keratan skor/simbol) tidak dapat dibaca — ditanda
+    kuning untuk semakan guru.
+  - Fail .doc lama: "Save As" .docx dahulu.
+
+5) MURID
+  - Dengan kod kelas / pautan guru: WAJIB isi nama & kelas → skor dihantar.
+  - Tanpa kod: main individu, skor tidak direkod untuk guru.
+  - Selepas tamat: "📄 Semakan PDF" (semua soalan, jawapan murid & jawapan
+    betul) dan "📤 Kongsi ke Guru" (WhatsApp / Classroom / emel).
+  - Tiada internet semasa hantar? Skor disimpan & dihantar automatik kemudian.
+
+6) PASANG SEBAGAI APLIKASI (PWA)
+  Android (Chrome): butang "📲 Pasang Aplikasi" / menu ⋮ → Install app.
+  iPhone/iPad (Safari): Kongsi ↑ → "Add to Home Screen".
+
+7) KEMAS KINI
+  Edit fail → tukar VERSION dalam sw.js (cth. v4.0.0 → v4.0.1) →
+  seret semula folder ke Netlify.
+
+8) UJI DI KOMPUTER
+  Terminal:  cd belon-teori-muzik-pwa  &&  python3 -m http.server 8000
+  Chrome:    http://localhost:8000

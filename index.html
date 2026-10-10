@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  BELON TEORI MUZIK AR  —  Permainan Web AR Interaktif
+  Seni Muzik KSSM (Sekolah Seni Malaysia) · Bidang 3.0 Teori Muzik
+  Tingkatan 2 & Tingkatan 3 (berdasarkan DSKP SSeM)
+  ----------------------------------------------------------------------------
+  VERSI WEB APP + PWA
+  Folder ini (index.html, manifest.webmanifest, sw.js, icons/) mesti dimuat
+  naik BERSAMA ke hos HTTPS (Netlify Drop / GitHub Pages). Selepas dibuka,
+  aplikasi boleh dipasang ke skrin utama dan dimainkan tanpa internet.
+  CARA MENJALANKAN
+  1. Kamera & mikrofon HANYA dibenarkan oleh pelayar melalui HTTPS (atau
+     http://localhost). Buka pautan di telefon (Chrome Android / Safari iOS).
+  2. Ujian pantas di komputer:  python3 -m http.server 8000
+     lalu buka http://localhost:8000
+  ----------------------------------------------------------------------------
+  TEKNOLOGI
+  - A-Frame 1.6 (WebGL/Three.js) : belon 3D terapung di atas suapan kamera
+  - getUserMedia                 : kamera (latar AR) + mikrofon (tembak tepuk)
+  - MediaPipe Hand Landmarker    : (pilihan) acu jari telunjuk untuk tembak
+  - DeviceOrientation (giroskop) : (pilihan) belon "tertambat" di ruang sebenar
+  - Web Audio API                : kesan bunyi disintesis (tiada fail audio)
+  - localStorage                 : papan skor tertinggi (per peranti)
+  ============================================================================
+-->
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#1b1446">
+<meta name="description" content="Permainan AR tembak belon — Teori Muzik KSSM Seni Muzik SSeM Tingkatan 2 & 3">
+<!-- PWA: boleh dipasang ke skrin utama & dimainkan luar talian -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Belon Muzik">
+<title>Belon Teori Muzik AR</title>
+<script src="lib/aframe.min.js"></script>
+<style>
+  :root{
+    --ink:#1b1446; --panel:rgba(20,14,60,.78); --panel-solid:#221a5c;
+    --pink:#ff4d6d; --blue:#4dabf7; --green:#40c057; --yellow:#fcc419;
+    --white:#fff; --muted:#c9c3ff; --ok:#2fd27a; --bad:#ff4646;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  [hidden]{display:none!important}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--ink);
+    font-family:"Trebuchet MS","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--white);
+    touch-action:manipulation;user-select:none;-webkit-user-select:none}
+
+  /* ---------- Lapisan AR: kamera di belakang, kanvas 3D lutsinar di atas ---------- */
+  #cam{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;background:#000}
+  #cam.mirror{transform:scaleX(-1)}
+  #skyFallback{position:fixed;inset:0;z-index:0;display:none;
+    background:radial-gradient(circle at 20% 15%,rgba(255,255,255,.55) 0 6%,transparent 7%),
+               radial-gradient(circle at 75% 30%,rgba(255,255,255,.45) 0 8%,transparent 9%),
+               linear-gradient(180deg,#6ec6ff 0%,#a5dbff 55%,#ffe6a8 100%)}
+  body.nocam #skyFallback{display:block}
+  body.nocam #cam{display:none}
+  a-scene{position:fixed!important;inset:0;width:100%!important;height:100%!important;z-index:1}
+  a-scene canvas{touch-action:none}
+
+  /* ---------- Skrin menu ---------- */
+  .screen{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;
+    padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom));
+    background:radial-gradient(circle at 30% 10%,#3b2a9e 0%,#1b1446 60%,#100b30 100%);overflow:auto}
+  .screen.show{display:flex}
+  .card{width:100%;max-width:440px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);
+    border-radius:24px;padding:22px 20px;text-align:center;backdrop-filter:blur(6px)}
+  .logo{font-size:52px;line-height:1;margin-bottom:6px;animation:float 3s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-8px)}}
+  h1{font-size:26px;margin:4px 0 2px;letter-spacing:.5px}
+  h2{font-size:20px;margin:6px 0 10px}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 16px}
+  input[type=text]{width:100%;font-size:18px;padding:14px 16px;border-radius:14px;border:2px solid rgba(255,255,255,.25);
+    background:rgba(0,0,0,.25);color:#fff;outline:none;text-align:center}
+  input[type=text]:focus{border-color:var(--yellow)}
+  .btn{display:block;width:100%;margin-top:12px;padding:14px 16px;font-size:17px;font-weight:700;border:0;border-radius:14px;
+    color:var(--ink);background:var(--yellow);cursor:pointer;box-shadow:0 5px 0 rgba(0,0,0,.25);font-family:inherit}
+  .btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.25)}
+  .btn.pink{background:var(--pink);color:#fff}.btn.blue{background:var(--blue);color:#06204a}
+  .btn.green{background:var(--green);color:#062b14}.btn.ghost{background:rgba(255,255,255,.12);color:#fff}
+  .btn small{display:block;font-weight:400;font-size:12px;opacity:.85;margin-top:2px}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.45}
+  .status{min-height:20px;font-size:14px;margin-top:10px}
+  .status.err{color:#ffb3b3}.status.ok{color:#a8ffcb}
+  .perm-icons{font-size:44px;margin:8px 0}
+  .err-text{color:#ffb3b3;font-size:13px;min-height:18px;margin-top:6px}
+
+  /* ---------- HUD permainan ---------- */
+  #hud{position:fixed;inset:0;z-index:5;pointer-events:none;display:none}
+  #hud.show{display:block}
+  #qPanel{position:absolute;left:10px;right:10px;top:max(10px,env(safe-area-inset-top));background:var(--panel);
+    border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:10px 14px 12px;backdrop-filter:blur(6px)}
+  #qMeta{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);gap:8px}
+  #qTopic{background:rgba(255,255,255,.14);padding:2px 9px;border-radius:99px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #qScore{font-weight:800;color:var(--yellow);font-size:16px;white-space:nowrap}
+  #qText{font-size:17px;font-weight:700;margin:7px 0 6px;line-height:1.3}
+  #qStaff{display:none;justify-content:center;margin:2px 0 6px}
+  #qStaff svg{height:86px;max-width:100%;background:rgba(255,255,255,.95);border-radius:12px}
+  #timerBar{height:7px;border-radius:9px;background:rgba(255,255,255,.18);overflow:hidden}
+  #timerFill{height:100%;width:100%;background:linear-gradient(90deg,var(--green),var(--yellow));transition:width .1s linear}
+  #timerFill.low{background:linear-gradient(90deg,var(--bad),#ff8f6b)}
+  #streak{position:absolute;right:16px;top:calc(max(10px,env(safe-area-inset-top)) + 4px);transform:translateY(-110%);font-size:13px;font-weight:700;color:#ffd8a8}
+
+  #toolbar{position:absolute;left:0;right:0;bottom:max(14px,env(safe-area-inset-bottom));display:flex;justify-content:center;gap:6px;padding:0 8px;pointer-events:none}
+  .tool{pointer-events:auto;width:44px;height:44px;flex:0 0 auto;border-radius:14px;border:1px solid rgba(255,255,255,.25);background:var(--panel);
+    color:#fff;font-size:21px;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;padding:0}
+  .tool.on{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
+  .tool .lbl{position:absolute;bottom:-14px;font-size:9px;color:#fff;white-space:nowrap;text-shadow:0 1px 2px #000}
+  #micMeter{position:absolute;left:14px;bottom:calc(max(10px,env(safe-area-inset-bottom)) + 66px);width:10px;height:70px;border-radius:8px;
+    background:rgba(0,0,0,.35);overflow:hidden;border:1px solid rgba(255,255,255,.3);display:none}
+  #micMeter.show{display:block}
+  #micFill{position:absolute;left:0;right:0;bottom:0;height:0;background:linear-gradient(0deg,var(--green),var(--yellow),var(--bad))}
+  #micThresh{position:absolute;left:0;right:0;height:2px;background:#fff}
+  #hint{position:absolute;left:0;right:0;padding:0 34px;bottom:calc(max(10px,env(safe-area-inset-bottom)) + 74px);text-align:center;font-size:13px;
+    color:#fff;text-shadow:0 1px 3px #000,0 0 6px #000}
+
+  #crosshair{position:fixed;left:50%;top:58%;width:46px;height:46px;margin:-23px 0 0 -23px;z-index:6;pointer-events:none;display:none}
+  #crosshair.show{display:block}
+  #handCanvas{position:fixed;inset:0;width:100%;height:100%;z-index:6;pointer-events:none}
+  #fingerCursor{position:fixed;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;z-index:7;pointer-events:none;display:none}
+  #fingerCursor.show{display:block}
+
+  /* ---------- Maklum balas Betul / Salah ---------- */
+  #feedback{position:fixed;left:50%;top:50%;z-index:9;pointer-events:none;transform:translate(-50%,-50%) scale(.3);opacity:0;
+    text-align:center;font-weight:900;font-size:54px;text-shadow:0 4px 0 rgba(0,0,0,.35),0 0 20px rgba(0,0,0,.5);white-space:nowrap}
+  #feedback .emo{display:block;font-size:84px;line-height:1.05}
+  #feedback .pts{display:block;font-size:20px;color:#fff}
+  #feedback.ok{color:var(--ok)}#feedback.bad{color:var(--bad)}
+  #feedback.anim{animation:fbPop 1.35s cubic-bezier(.2,1.4,.4,1) forwards}
+  #feedback.bad.anim .emo{animation:shake .5s .1s}
+  @keyframes fbPop{0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}18%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}
+    30%{transform:translate(-50%,-50%) scale(1)}80%{opacity:1}100%{opacity:0;transform:translate(-50%,-62%) scale(1)}}
+  @keyframes shake{20%,60%{transform:translateX(-12px) rotate(-8deg)}40%,80%{transform:translateX(12px) rotate(8deg)}}
+  #flash{position:fixed;inset:0;z-index:8;pointer-events:none;opacity:0}
+  #flash.ok{background:radial-gradient(circle,transparent 40%,rgba(47,210,122,.55))}
+  #flash.bad{background:radial-gradient(circle,transparent 40%,rgba(255,70,70,.6))}
+  #flash.anim{animation:flash .7s ease-out}
+  @keyframes flash{0%{opacity:1}100%{opacity:0}}
+
+  #countdown{position:fixed;inset:0;z-index:10;display:none;align-items:center;justify-content:center;pointer-events:none;
+    font-size:110px;font-weight:900;color:#fff;text-shadow:0 6px 0 rgba(0,0,0,.35),0 0 30px rgba(0,0,0,.6)}
+  #countdown.show{display:flex}
+  #countdown span{animation:cd .9s ease-out}
+  @keyframes cd{0%{transform:scale(2.2);opacity:0}30%{transform:scale(1);opacity:1}100%{opacity:.2}}
+
+  /* ---------- Jeda & Tamat ---------- */
+  .modal{position:fixed;inset:0;z-index:30;display:none;align-items:center;justify-content:center;background:rgba(10,6,35,.72);padding:16px}
+  .modal.show{display:flex}
+  .bigscore{font-size:56px;font-weight:900;color:var(--yellow);line-height:1;margin:6px 0}
+  .stats{display:flex;justify-content:center;gap:10px;margin:10px 0 4px;flex-wrap:wrap}
+  .stat{background:rgba(255,255,255,.1);border-radius:12px;padding:8px 12px;min-width:84px}
+  .stat b{display:block;font-size:20px}.stat span{font-size:11px;color:var(--muted)}
+  table.lb{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+  table.lb th{font-size:11px;color:var(--muted);text-align:left;padding:4px 6px;font-weight:600}
+  table.lb td{padding:7px 6px;border-top:1px solid rgba(255,255,255,.1);text-align:left}
+  table.lb td.r,table.lb th.r{text-align:right}
+  table.lb tr.me td{background:rgba(252,196,25,.22);font-weight:800}
+  .tabs{display:flex;gap:6px;margin-top:8px}
+  .tabs button{flex:1;padding:8px 4px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;font-weight:700;font-family:inherit;font-size:13px}
+  .tabs button.on{background:#fff;color:var(--ink)}
+  details.review{margin-top:12px;text-align:left;background:rgba(0,0,0,.2);border-radius:12px;padding:8px 12px}
+  details.review summary{cursor:pointer;font-weight:700;font-size:14px}
+  details.review li{font-size:13px;margin:8px 0;line-height:1.35}
+  details.review .ans{color:#a8ffcb}.details.review .your{color:#ffb3b3}
+  .empty{color:var(--muted);font-size:13px;padding:10px}
+  .row{display:flex;gap:8px}.row .btn{margin-top:10px}
+
+  /* ---------- Pendaftaran: kelas & kod ---------- */
+  .fld{display:block;text-align:left;margin-top:10px}
+  .fld>span{display:block;font-size:12.5px;color:var(--muted);margin:0 0 4px 4px}
+  .fld em{font-style:normal;opacity:.75}
+  select,textarea,.adm-card input[type=text],.adm-card input[type=email],.adm-card input[type=password],.adm-card input[type=search],#kelasSelect{
+    width:100%;font-size:16px;padding:11px 12px;border-radius:12px;border:2px solid rgba(255,255,255,.22);background:rgba(0,0,0,.25);color:#fff;outline:none;font-family:inherit}
+  select option{color:#111}
+  textarea{resize:vertical}
+  .adm-card input[type=text],.adm-card textarea{text-align:left}
+  .code-row{display:flex;gap:8px;align-items:stretch}
+  .code-row input{flex:1;text-transform:uppercase;letter-spacing:2px;text-align:center}
+  .btn.mini{width:auto;display:inline-block;padding:9px 14px;font-size:14px;margin-top:8px;box-shadow:0 3px 0 rgba(0,0,0,.25)}
+  .code-row .btn.mini{margin-top:0}
+  .room-banner{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:10px 12px;margin:6px 0 4px;text-align:left}
+  .room-banner img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:10px;flex:0 0 auto}
+  .room-banner div{flex:1;min-width:0}
+  .room-banner b{display:block;font-size:15px;line-height:1.25}
+  .room-banner small{display:block;font-size:12px;color:var(--muted)}
+  .link{background:none;border:0;color:var(--muted);font-family:inherit;font-size:14px;cursor:pointer;padding:6px}
+  .admin-link{margin-top:10px;text-decoration:underline}
+  .mode-note{font-size:12px;color:var(--muted);margin-top:8px;min-height:14px}
+  #qOpts{margin:6px 0 4px;padding-left:22px;font-size:13.5px;line-height:1.35;text-align:left}
+  #qOpts li{margin:2px 0}
+  .end-who{color:var(--muted);font-size:13px;margin-top:2px}
+  .end-submit{margin:10px 0 0;font-size:13.5px;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.1)}
+  .end-submit.ok{background:rgba(47,210,122,.18);color:#bff7d7}.end-submit.bad{background:rgba(255,70,70,.18);color:#ffd0d0}
+  .tabs{flex-wrap:wrap}.tabs button{flex:1 1 30%}
+
+  /* ---------- Panel Admin ---------- */
+  .admin{position:fixed;inset:0;z-index:60;background:#120d33;overflow:auto;-webkit-overflow-scrolling:touch}
+  .admin[hidden]{display:none}
+  .adm-wrap{max-width:860px;margin:0 auto;padding:max(10px,env(safe-area-inset-top)) 12px 40px}
+  .adm-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:10px;padding:10px 4px;background:#120d33}
+  .adm-top b{font-size:18px;flex:1}
+  .adm-x{background:rgba(255,255,255,.12);border:0;color:#fff;width:38px;height:38px;border-radius:12px;font-size:18px;cursor:pointer}
+  .chip{display:inline-block;font-size:11.5px;padding:3px 9px;border-radius:99px;background:rgba(255,255,255,.14);color:#fff;font-weight:600}
+  .chip.on{background:var(--green);color:#062b14}.chip.warn{background:var(--yellow);color:var(--ink)}
+  .adm-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:14px;margin:10px 0;text-align:left}
+  .adm-card h3{margin:0 0 8px;font-size:16px}
+  .adm-card input,.adm-card select,.adm-card textarea{margin-top:6px}
+  .adm-login{max-width:420px;margin:30px auto;text-align:center}
+  .adm-login input{width:100%;font-size:18px;padding:13px;border-radius:14px;border:2px solid rgba(255,255,255,.25);background:rgba(0,0,0,.25);color:#fff;text-align:center;margin-top:6px}
+  .adm-caption{margin-top:14px;font-size:14px;color:#ffe08a;background:rgba(252,196,25,.12);border:1px dashed rgba(252,196,25,.5);border-radius:12px;padding:10px}
+  .adm-hint{font-size:12.5px;color:var(--muted);line-height:1.45;margin:4px 0 8px}
+  .adm-hint code{background:rgba(0,0,0,.3);padding:1px 5px;border-radius:6px}
+  .adm-tabs{display:flex;gap:6px;overflow-x:auto;padding:4px 0 2px;position:sticky;top:58px;z-index:2;background:#120d33}
+  .adm-tabs button{flex:1 0 auto;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;font-weight:700;font-family:inherit;font-size:13.5px;cursor:pointer;white-space:nowrap}
+  .adm-tabs button.on{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
+  .adm-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:16px;font-size:12.5px;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+  .chips button{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;border-radius:12px;padding:8px 10px;font-family:inherit;font-size:13px;cursor:pointer;text-align:left}
+  .chips button.on{background:var(--yellow);color:var(--ink)}
+  .chips button small{display:block;font-size:10.5px;opacity:.8}
+  .checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:4px 12px}
+  .checks label,.switch{display:flex;align-items:center;gap:8px;font-size:14px;padding:6px 2px;cursor:pointer}
+  .checks input,.switch input{width:20px;height:20px;accent-color:var(--yellow);margin:0;flex:0 0 auto}
+  .switch{margin-top:6px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .logo-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .logo-row img{width:64px;height:64px;object-fit:contain;background:#fff;border-radius:12px}
+  .logo-row input{flex:1;min-width:0;font-size:13px}
+  .share-grid{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center}
+  .share-grid img{width:150px;height:150px;background:#fff;border-radius:12px;image-rendering:pixelated}
+  .bigcode{font-size:34px;font-weight:900;letter-spacing:5px;color:var(--yellow)}
+  .row.wrap{flex-wrap:wrap}.row select{flex:1;min-width:120px}
+  .table-wrap{overflow-x:auto;margin-top:8px;max-height:60vh}
+  .adm-table td,.adm-table th{white-space:nowrap;font-size:13px}
+  .adm-table td button{background:none;border:0;cursor:pointer;font-size:16px;padding:2px 4px}
+  .qlist{margin-top:8px;max-height:60vh;overflow:auto}
+  .qitem{border-top:1px solid rgba(255,255,255,.1);padding:8px 2px;font-size:13.5px;display:flex;gap:8px}
+  .qitem .qt{flex:1}.qitem .qt small{display:block;color:var(--muted);margin-top:2px}
+  .qitem .qt .ok{color:#a8ffcb;font-weight:700}
+  .qitem button{background:none;border:0;color:#ffb3b3;cursor:pointer;font-size:16px}
+  .rv-sum{font-size:14px;margin:8px 0}
+  .rv{border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:10px;margin:8px 0;background:rgba(0,0,0,.18)}
+  .rv.bad{border-color:rgba(252,196,25,.7)}
+  .rv.off{opacity:.45}
+  .rv-head{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+  .rv-head .flag{background:var(--yellow);color:var(--ink);border-radius:99px;padding:1px 8px;font-size:11px;font-weight:700}
+  .rv textarea{font-size:14px;padding:8px}
+  .rv .ro{display:flex;align-items:center;gap:6px;margin-top:5px}
+  .rv .ro input[type=text]{flex:1;font-size:14px;padding:7px 9px;margin:0}
+  .rv .ro input[type=radio]{width:18px;height:18px;accent-color:var(--green)}
+  .rv .ro b{width:16px}
+  .rv-bar{position:sticky;bottom:0;background:#1c1550;border-radius:14px;padding:10px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;box-shadow:0 -6px 16px rgba(0,0,0,.35)}
+  .mopts label{display:flex;align-items:center;gap:6px;margin-top:6px}
+  .mopts input[type=text]{flex:1}
+  @media (max-width:520px){ .two{grid-template-columns:1fr} .share-grid{grid-template-columns:1fr;justify-items:center;text-align:center} }
+  /* PWA */
+  #btnInstall{display:none}
+  #btnInstall.show{display:block}
+  #iosHint{display:none;margin-top:10px;font-size:13px;line-height:1.5;background:rgba(255,255,255,.1);border-radius:12px;padding:10px 12px;text-align:left}
+  #iosHint.show{display:block}
+  #netChip{position:fixed;right:10px;top:max(10px,env(safe-area-inset-top));z-index:25;font-size:11.5px;padding:4px 10px;border-radius:99px;
+    background:rgba(0,0,0,.45);color:#fff;pointer-events:none;display:none}
+  #netChip.show{display:block}
+  body.ingame #netChip{display:none}
+  #updBar{position:fixed;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:45;background:#fcc419;color:#1b1446;
+    border-radius:14px;padding:10px 14px;font-weight:700;font-size:14px;display:none;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+  #updBar.show{display:flex;gap:10px;align-items:center}
+  #updBar button{border:0;border-radius:10px;padding:6px 10px;background:#1b1446;color:#fff;font-weight:700;font-family:inherit}
+</style>
+</head>
+<body>
+
+<!-- Suapan kamera (latar belakang AR) -->
+<video id="cam" playsinline muted autoplay></video>
+<div id="skyFallback"></div>
+
+<!-- Adegan 3D A-Frame (lutsinar, di atas kamera) -->
+<a-scene id="scene" embedded
+  renderer="alpha:true; antialias:true; colorManagement:true; maxCanvasWidth:1440; maxCanvasHeight:1440"
+  vr-mode-ui="enabled:false" device-orientation-permission-ui="enabled:false" loading-screen="enabled:false"
+  background="transparent:true" game-loop>
+  <a-entity light="type:ambient; intensity:0.85; color:#ffffff"></a-entity>
+  <a-entity light="type:directional; intensity:1.1; color:#ffffff" position="1.5 3 2"></a-entity>
+  <a-entity light="type:directional; intensity:0.35; color:#bcd7ff" position="-2 1 1"></a-entity>
+  <a-entity id="cameraEl" camera="fov:70" position="0 1.6 0"
+    look-controls="enabled:false; magicWindowTrackingEnabled:true; touchEnabled:false; mouseEnabled:false"></a-entity>
+</a-scene>
+
+<!-- ===================== SKRIN 1: PENDAFTARAN ===================== -->
+<section id="scrRegister" class="screen show">
+  <div class="card">
+    <div class="logo">🎈🎵🎈</div>
+    <h1>Belon Teori Muzik AR</h1>
+    <p class="sub">Pendidikan Muzik &amp; Seni Muzik KSSM · Teori Muzik</p>
+    <div id="roomBanner" class="room-banner" hidden>
+      <img id="roomLogo" alt="" hidden>
+      <div><b id="roomSchool"></b><small id="roomTeacher"></small></div>
+      <button class="link" id="btnLeaveRoom" title="Main individu">✕</button>
+    </div>
+    <label class="fld"><span>Nama penuh</span>
+      <input id="nameInput" type="text" maxlength="40" placeholder="Tulis nama anda" autocomplete="name"></label>
+    <label class="fld" id="kelasWrap" hidden><span>Kelas <em>(wajib)</em></span>
+      <select id="kelasSelect" hidden></select>
+      <input id="kelasInput" type="text" maxlength="20" placeholder="cth. 2 Bestari" autocomplete="off"></label>
+    <div id="codeWrap" class="code-wrap" hidden>
+      <label class="fld"><span>Kod Kelas <em>(jika diberi guru)</em></span>
+        <div class="code-row"><input id="codeInput" type="text" maxlength="12" placeholder="cth. K7Q2MX" autocomplete="off" autocapitalize="characters"><button class="btn mini" id="btnCode">Semak</button></div></label>
+    </div>
+    <div id="nameErr" class="err-text"></div>
+    <div id="modeNote" class="mode-note"></div>
+    <button class="btn" id="btnRegister">Daftar &amp; Mula ▶</button>
+    <button class="btn ghost" id="btnShowLb1">🏆 Skor Tertinggi</button>
+    <button class="btn green" id="btnInstall">📲 Pasang Aplikasi<small>Ikon di skrin utama · skrin penuh · boleh main tanpa internet</small></button>
+    <div id="iosHint">📲 <b>Pasang di iPhone/iPad:</b> tekan butang <b>Kongsi</b> (petak dengan anak panah ↑) di Safari, kemudian pilih <b>“Add to Home Screen / Tambah ke Skrin Utama”</b>.</div>
+    <p class="note">Tembak belon yang membawa jawapan betul. Soalan dijana secara rawak setiap pusingan.</p>
+    <button class="link admin-link" id="btnAdmin">⚙️ Admin Guru</button>
+  </div>
+</section>
+
+<!-- ===================== SKRIN 2: KEBENARAN KAMERA & MIKROFON ===================== -->
+<section id="scrPerm" class="screen">
+  <div class="card">
+    <h2>Hai, <span id="helloName"></span>! 👋</h2>
+    <div class="perm-icons">📷 🎤</div>
+    <p class="sub">Mod AR memerlukan <b>kamera</b> (belon terapung di ruang sebenar) dan <b>mikrofon</b> (tepuk tangan untuk menembak).</p>
+    <button class="btn green" id="btnPerm">Benarkan Kamera &amp; Mikrofon</button>
+    <div id="permStatus" class="status"></div>
+    <button class="btn ghost" id="btnNoCam">Teruskan tanpa kamera</button>
+    <p class="note">Jika tiada tetingkap kebenaran, semak tetapan pelayar. Kamera hanya berfungsi melalui pautan <b>https://</b>.</p>
+  </div>
+</section>
+
+<!-- ===================== SKRIN 3: PILIH TAHAP ===================== -->
+<section id="scrLevel" class="screen">
+  <div class="card">
+    <h2>Pilih Set Soalan</h2>
+    <p class="sub" id="levelSub">Soalan dijana secara rawak setiap pusingan.</p>
+    <div id="levelBtns"></div>
+    <button class="btn ghost" id="btnShowLb2">🏆 Skor Tertinggi</button>
+    <button class="btn ghost" id="btnBackReg">← Tukar nama / kelas</button>
+  </div>
+</section>
+
+<!-- ===================== HUD PERMAINAN ===================== -->
+<div id="hud">
+  <div id="qPanel">
+    <div id="qMeta"><span id="qNum">Soalan 1/20</span><span id="qTopic">Topik</span><span id="qScore">⭐ 0</span></div>
+    <div id="qText">…</div>
+    <div id="qStaff"></div>
+    <ol id="qOpts" type="A" hidden></ol>
+    <div id="timerBar"><div id="timerFill"></div></div>
+  </div>
+  <div id="micMeter"><div id="micFill"></div><div id="micThresh"></div></div>
+  <div id="hint">Ketik belon jawapan yang betul 🎯</div>
+  <div id="toolbar">
+    <button class="tool" id="tPause" title="Jeda">⏸<span class="lbl">Jeda</span></button>
+    <button class="tool" id="tFlip" title="Tukar kamera">🔄<span class="lbl">Kamera</span></button>
+    <button class="tool" id="tHand" title="Acu jari">☝️<span class="lbl">Jari</span></button>
+    <button class="tool" id="tMirror" title="Cermin kamera">🪞<span class="lbl">Cermin</span></button>
+    <button class="tool" id="tClap" title="Tepuk untuk tembak">👏<span class="lbl">Tepuk</span></button>
+    <button class="tool" id="tGyro" title="Giroskop">🧭<span class="lbl">Gyro</span></button>
+    <button class="tool on" id="tSound" title="Bunyi">🔊<span class="lbl">Bunyi</span></button>
+  </div>
+</div>
+
+<svg id="crosshair" viewBox="0 0 46 46"><circle cx="23" cy="23" r="15" fill="none" stroke="#fff" stroke-width="3"/><circle cx="23" cy="23" r="15" fill="none" stroke="#ff4d6d" stroke-width="1.5"/><path d="M23 2v10M23 34v10M2 23h10M34 23h10" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="23" cy="23" r="2.5" fill="#ff4d6d"/></svg>
+<canvas id="handCanvas"></canvas>
+<svg id="fingerCursor" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="24" fill="rgba(255,255,255,.18)" stroke="#fff" stroke-width="3"/>
+  <circle id="dwellRing" cx="32" cy="32" r="24" fill="none" stroke="#fcc419" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="150.8" stroke-dashoffset="150.8" transform="rotate(-90 32 32)"/>
+  <circle cx="32" cy="32" r="4" fill="#ff4d6d"/>
+</svg>
+
+<div id="netChip"></div>
+<div id="updBar">Versi baharu tersedia <button id="btnUpdate">Kemas kini</button></div>
+<div id="flash"></div>
+<div id="feedback"></div>
+<div id="countdown"></div>
+
+<!-- ===================== JEDA ===================== -->
+<div id="mdlPause" class="modal">
+  <div class="card">
+    <h2>⏸ Permainan Dijeda</h2>
+    <button class="btn green" id="btnResume">Sambung ▶</button>
+    <button class="btn ghost" id="btnQuit">Tamatkan &amp; lihat skor</button>
+    <button class="btn ghost" id="btnMenu">Kembali ke menu tahap</button>
+  </div>
+</div>
+
+<!-- ===================== TAMAT / SKOR TERTINGGI ===================== -->
+<div id="mdlEnd" class="modal">
+  <div class="card" style="max-height:92vh;overflow:auto">
+    <div id="endHead">
+      <div class="logo" id="endEmoji">🏆</div>
+      <h2 id="endTitle">Tahniah!</h2>
+      <div class="bigscore" id="endScore">0</div>
+      <div id="endWho" class="end-who"></div>
+      <div class="stats">
+        <div class="stat"><b id="stCorrect">0</b><span>Betul</span></div>
+        <div class="stat"><b id="stWrong">0</b><span>Salah</span></div>
+        <div class="stat"><b id="stAcc">0%</b><span>Ketepatan</span></div>
+        <div class="stat"><b id="stRank">-</b><span>Kedudukan</span></div>
+      </div>
+      <div id="endSubmit" class="end-submit" hidden></div>
+      <div class="row" id="pdfBtns">
+        <button class="btn blue" id="btnPdfReview">📄 Semakan PDF</button>
+        <button class="btn green" id="btnShareReview">📤 Kongsi ke Guru</button>
+      </div>
+    </div>
+    <h2 style="margin-top:14px">🏆 Skor Tertinggi <small style="font-size:12px;color:var(--muted)">(peranti ini)</small></h2>
+    <div class="tabs" id="lbTabs">
+      <button data-tab="T2">Tingkatan 2</button><button data-tab="T3">Tingkatan 3</button><button data-tab="MIX">Campuran</button><button data-tab="UMUM">Bank Umum</button><button data-tab="GURU">Soalan Guru</button>
+    </div>
+    <div id="lbBody"></div>
+    <details class="review" id="reviewBox"><summary>📖 Semak jawapan yang salah (lihat semua dalam PDF)</summary><ol id="reviewList"></ol></details>
+    <div class="row" id="endBtns">
+      <button class="btn" id="btnAgain">Main Semula</button>
+      <button class="btn ghost" id="btnLevel">Tukar Tahap</button>
+    </div>
+    <button class="btn ghost" id="btnCloseLb">Tutup</button>
+  </div>
+</div>
+
+<!-- ===================== PANEL ADMIN GURU ===================== -->
+<div id="admin" class="admin" hidden>
+  <div class="adm-wrap">
+    <header class="adm-top">
+      <b>⚙️ Panel Admin Guru</b>
+      <span id="admMode" class="chip"></span>
+      <button class="adm-x" id="admClose" aria-label="Tutup">✕</button>
+    </header>
+
+    <!-- Log masuk -->
+    <section id="admLogin" class="adm-card adm-login">
+      <div class="logo" style="font-size:42px">🔐</div>
+      <h2>Log Masuk Admin</h2>
+      <input type="password" id="admPw" placeholder="Kata laluan admin" autocomplete="current-password">
+      <button class="btn" id="admLoginBtn">Log Masuk</button>
+      <div class="err-text" id="admLoginErr"></div>
+      <p class="adm-caption">Untuk login password admin boleh roger Cikgu dzurri</p>
+    </section>
+
+    <section id="admMain" hidden>
+      <nav class="adm-tabs" id="admTabs">
+        <button data-tab="kelas" class="on">🏫 Kelas &amp; Sekolah</button>
+        <button data-tab="soalan">📄 Soalan Guru</button>
+        <button data-tab="skor">📊 Skor Murid</button>
+        <button data-tab="bank">🌐 Bank Umum</button>
+      </nav>
+
+      <!-- TAB 1: KELAS & SEKOLAH -->
+      <div class="adm-pane" data-pane="kelas">
+        <div class="adm-card" id="roomPicker">
+          <h3>Kelas anda</h3>
+          <div id="myRooms" class="chips"></div>
+          <div class="code-row">
+            <input id="admOpenCode" type="text" placeholder="Buka kod kelas sedia ada" maxlength="12" autocapitalize="characters">
+            <button class="btn mini ghost" id="admOpenBtn">Buka</button>
+          </div>
+          <button class="btn green" id="admNewRoom">➕ Cipta Kelas Baharu</button>
+        </div>
+        <div class="adm-card" id="roomForm">
+          <h3 id="roomFormTitle">Tetapan Kelas</h3>
+          <p class="adm-hint" id="roomFormHint"></p>
+          <label class="fld"><span>Nama sekolah</span><input id="fSekolah" type="text" maxlength="80" placeholder="cth. SMK Taman Muzik"></label>
+          <label class="fld"><span>Nama guru</span><input id="fGuru" type="text" maxlength="60" placeholder="cth. Cikgu Aminah"></label>
+          <div class="fld"><span>Logo sekolah</span>
+            <div class="logo-row"><img id="fLogoPrev" alt="" hidden><input id="fLogo" type="file" accept="image/*"><button class="btn mini ghost" id="fLogoDel" hidden>Buang</button></div></div>
+          <label class="fld"><span>Senarai kelas <em>(pilihan — murid pilih dari senarai)</em></span>
+            <textarea id="fKelas" rows="2" placeholder="cth. 1 Bestari, 1 Cemerlang, 2 Bestari"></textarea></label>
+          <div class="fld"><span>Set soalan yang dibenarkan untuk murid</span>
+            <div class="checks">
+              <label><input type="checkbox" id="sGuru" checked> 📄 Soalan Guru (muat naik)</label>
+              <label><input type="checkbox" id="sUmum" checked> 📚 Bank Soalan Umum</label>
+              <label><input type="checkbox" id="sT2" checked> 📘 DSKP Tingkatan 2</label>
+              <label><input type="checkbox" id="sT3" checked> 📗 DSKP Tingkatan 3</label>
+              <label><input type="checkbox" id="sMix"> 🎲 Campuran T2 + T3</label>
+            </div></div>
+          <div class="two">
+            <label class="fld"><span>Bilangan soalan</span><select id="fBil"><option>10</option><option>15</option><option selected>20</option><option>25</option><option>30</option><option>40</option></select></label>
+            <label class="fld"><span>Masa setiap soalan</span><select id="fMasa"><option value="15">15 saat</option><option value="20">20 saat</option><option value="25" selected>25 saat</option><option value="30">30 saat</option><option value="45">45 saat</option><option value="60">60 saat</option></select></label>
+          </div>
+          <label class="switch"><input type="checkbox" id="fRekod" checked><span>Rekod skor murid (murid wajib isi nama &amp; kelas)</span></label>
+          <label class="switch"><input type="checkbox" id="fAktif" checked><span>Kelas dibuka untuk murid</span></label>
+          <button class="btn" id="admSaveRoom">💾 Simpan Tetapan</button>
+          <div class="status" id="admRoomStatus"></div>
+        </div>
+        <div class="adm-card" id="shareCard" hidden>
+          <h3>📣 Kongsi dengan murid</h3>
+          <div class="share-grid">
+            <img id="shareQR" alt="Kod QR kelas">
+            <div>
+              <div class="bigcode" id="shareCode"></div>
+              <input id="shareLink" type="text" readonly>
+              <div class="row">
+                <button class="btn mini" id="shareCopy">📋 Salin Pautan</button>
+                <button class="btn mini green" id="shareSend">📤 Kongsi</button>
+              </div>
+              <button class="btn mini ghost" id="shareQRdl">⬇️ Muat turun QR</button>
+            </div>
+          </div>
+          <p class="adm-hint">Murid buka pautan atau imbas QR → wajib isi nama &amp; kelas → skor masuk ke tab 📊 Skor Murid.</p>
+        </div>
+      </div>
+
+      <!-- TAB 2: SOALAN GURU -->
+      <div class="adm-pane" data-pane="soalan" hidden>
+        <div class="adm-card">
+          <h3>⬆️ Muat naik set soalan (PDF / DOCX)</h3>
+          <p class="adm-hint">Soalan objektif bernombor (1. 2. 3.) dengan pilihan A–D. Jawapan boleh ditulis sebagai <b>“Jawapan: B”</b> selepas soalan, atau dalam bahagian <b>SKEMA JAWAPAN</b> di akhir dokumen (cth. <code>1. B 2. C 3. A</code>). Jika ada beberapa <b>SET</b>, tulis “Set 1”, “Set 2” dalam skema.</p>
+          <label class="fld"><span>Nama set / topik <em>(pilihan)</em></span><input id="upTopik" type="text" maxlength="40" placeholder="cth. Latihan Bab 3"></label>
+          <input type="file" id="upFile" accept=".pdf,.docx,.txt" multiple>
+          <div class="status" id="upStatus"></div>
+          <div id="upReview"></div>
+        </div>
+        <div class="adm-card">
+          <details><summary><b>✍️ Tambah soalan secara manual</b></summary>
+            <label class="fld"><span>Soalan</span><textarea id="mQ" rows="2"></textarea></label>
+            <div class="mopts">
+              <label><input type="radio" name="mAns" value="0" checked> A <input id="mA0" type="text"></label>
+              <label><input type="radio" name="mAns" value="1"> B <input id="mA1" type="text"></label>
+              <label><input type="radio" name="mAns" value="2"> C <input id="mA2" type="text" placeholder="(pilihan)"></label>
+              <label><input type="radio" name="mAns" value="3"> D <input id="mA3" type="text" placeholder="(pilihan)"></label>
+            </div>
+            <p class="adm-hint">Tandakan bulatan pada jawapan yang betul.</p>
+            <button class="btn mini" id="mAdd">➕ Tambah</button>
+            <div class="status" id="mStatus"></div>
+          </details>
+        </div>
+        <div class="adm-card">
+          <h3>📚 Soalan dalam kelas ini: <span id="qCount">0</span></h3>
+          <div class="row"><button class="btn mini ghost" id="qRefresh">🔄 Muat semula</button><button class="btn mini pink" id="qClear">🗑 Padam semua</button></div>
+          <div id="qList" class="qlist"></div>
+        </div>
+      </div>
+
+      <!-- TAB 3: SKOR MURID -->
+      <div class="adm-pane" data-pane="skor" hidden>
+        <div class="adm-card">
+          <h3>📊 Skor Murid <span id="scCount" class="chip"></span></h3>
+          <div class="row wrap">
+            <select id="scKelas"><option value="">Semua kelas</option></select>
+            <select id="scTahap"><option value="">Semua set</option></select>
+            <button class="btn mini ghost" id="scRefresh">🔄</button>
+          </div>
+          <div class="row">
+            <button class="btn mini green" id="scXlsx">⬇️ Excel</button>
+            <button class="btn mini blue" id="scPdf">⬇️ PDF</button>
+          </div>
+          <div class="table-wrap"><table class="lb adm-table" id="scTable"></table></div>
+          <button class="btn mini pink" id="scClear">🗑 Padam semua skor kelas ini</button>
+        </div>
+      </div>
+
+      <!-- TAB 4: BANK UMUM -->
+      <div class="adm-pane" data-pane="bank" hidden>
+        <div class="adm-card" id="bankInfo"></div>
+        <div class="adm-card" id="superLogin" hidden>
+          <h3>🔑 Pentadbir Utama</h3>
+          <p class="adm-hint">Hanya Cikgu Dzurri boleh menambah/memadam soalan Bank Umum.</p>
+          <input id="supEmail" type="email" placeholder="Emel pentadbir utama" autocomplete="username">
+          <input id="supPw" type="password" placeholder="Kata laluan" autocomplete="current-password">
+          <button class="btn" id="supLogin">Log Masuk Pentadbir Utama</button>
+          <div class="err-text" id="supErr"></div>
+        </div>
+        <div id="superTools" hidden>
+          <div class="adm-card">
+            <h3>🌱 Bank soalan lalai</h3>
+            <p class="adm-hint">Muat naik <b id="seedN">312</b> soalan terbina (daripada fail set soalan Cikgu Dzurri) ke Firebase.</p>
+            <button class="btn green" id="bankSeed">⬆️ Muat naik soalan lalai ke Firebase</button>
+            <div class="status" id="bankSeedStatus"></div>
+          </div>
+          <div class="adm-card">
+            <h3>⬆️ Tambah ke Bank Umum (PDF / DOCX)</h3>
+            <label class="fld"><span>Tahap</span><select id="bankTahap"><option value="UMUM">Umum (Menengah Rendah)</option><option value="T1">Tingkatan 1</option><option value="T2">Tingkatan 2</option><option value="T3">Tingkatan 3</option></select></label>
+            <label class="fld"><span>Topik <em>(pilihan)</em></span><input id="bankTopik" type="text" maxlength="40"></label>
+            <input type="file" id="bankFile" accept=".pdf,.docx,.txt" multiple>
+            <div class="status" id="bankStatus"></div>
+            <div id="bankReview"></div>
+          </div>
+          <div class="adm-card">
+            <h3>🔎 Soalan dalam Bank Umum: <span id="bankCount">0</span></h3>
+            <p class="adm-hint">Jika anda menambah soalan terus di Firebase Console (koleksi <code>soalan</code>), tekan butang ini supaya murid nampak soalan baharu.</p>
+            <button class="btn mini ghost" id="bankRebuild">🔄 Kemas kini bank untuk murid</button>
+            <input id="bankSearch" type="search" placeholder="Cari soalan…">
+            <div id="bankList" class="qlist"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="adm-foot">
+        <span id="admWho"></span>
+        <button class="btn mini ghost" id="admLogout">🚪 Log keluar</button>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="firebase-config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/parser.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/data.js"></script>
+<script src="js/report.js"></script>
+<script src="js/game.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

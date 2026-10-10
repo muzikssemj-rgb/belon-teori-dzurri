@@ -1,0 +1,23 @@
+SEMAKAN SKEMA JAWAPAN — fail set soalan teori muzik
+=====================================================
+Semasa membina Bank Soalan Umum (312 soalan selepas buang ulangan), 13 kesilapan
+skema dijumpai dan DIBETULKAN dalam aplikasi. Fail asal .docx TIDAK diubah —
+sila betulkan juga dalam fail anda.
+
+Rujukan: Klef trebel garisan E-G-B-D-F, ruang F-A-C-E; klef bes garisan G-B-D-F-A, ruang A-C-E-G.
+
+3 Set Soalan Teori Muzik (40 Soalan Setiap Set) — Set 2 No. 8: "Minor relatif bagi D major ialah:" skema C (C♯ minor) → betul: B minor
+3 Set Soalan Teori Muzik (40 Soalan Setiap Set) — Set 2 No. 11: "Dalam klef trebel, ruang paling bawah ialah not:" skema A (D) → betul: F
+3 Set Soalan Teori Muzik (40 Soalan Setiap Set) — Set 2 No. 12: "Dalam klef trebel, garisan paling atas ialah not:" skema D (G) → betul: F
+3 Set Soalan Teori Muzik (40 Soalan Setiap Set) — Set 2 No. 14: "Dalam klef bass, garisan paling atas ialah not:" skema C (F) → betul: A [pilihan dibaiki: A / C / F / G]
+3 Set Soalan Teori Muzik (40 Soalan Setiap Set) — Set 3 No. 11: "Dalam klef trebel, ruang paling atas ialah not:" skema C (A) → betul: E [pilihan dibaiki: F / A / C / E]
+3 Set Soalan Teori Muzik Menengah Rendah — Set 1 No. 9: "Dalam klef bass, garisan paling bawah ialah not:" skema C (E) → betul: G
+3 Set Soalan Teori Muzik Menengah Rendah — Set 2 No. 5: "Skel D major mempunyai minor relatif:" skema C (F♯ minor) → betul: B minor
+5 Set Tambahan Teori Muzik (40 Soalan) — Set 4 No. 14: "Dalam klef trebel, garisan paling atas ialah:" skema D (G) → betul: F
+5 Set Tambahan Teori Muzik (40 Soalan) — Set 4 No. 15: "Dalam klef bass, garisan paling atas ialah:" skema C (F) → betul: A [pilihan dibaiki: A / C / F / G]
+5 Set Tambahan Teori Muzik (40 Soalan) — Set 5 No. 14: "Dalam klef trebel, ruang paling atas ialah:" skema C (A) → betul: E [pilihan dibaiki: F / A / C / E]
+5 Set Tambahan Teori Muzik (40 Soalan) — Set 6 No. 14: "Dalam klef trebel, ruang ketiga dari bawah ialah:" skema C (E) → betul: C
+5 Set Tambahan Teori Muzik (40 Soalan) — Set 7 No. 3: "Tiga not kuaver mempunyai nilai masa bersamaan dengan:" skema B (Satu not minim bertitik) → betul: Satu not krocet bertitik [pilihan dibaiki: Satu not minim / Satu not krocet bertitik / Satu not krocet / Satu not semibrif]
+5 Set Tambahan Teori Muzik (40 Soalan) — Set 8 No. 16: "Dalam klef bass, garisan paling atas ialah:" skema C (F) → betul: A [pilihan dibaiki: A / C / F / G]
+
+Fail 'soalan exam random.docx' tidak dimasukkan (soalan bergambar, tiada skema, campuran topik bukan teori).

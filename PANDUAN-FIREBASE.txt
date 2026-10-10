@@ -1,0 +1,81 @@
+PANDUAN SAMBUNG FIREBASE — Belon Teori Muzik AR (v4)
+=====================================================================
+Tanpa Firebase, aplikasi berjalan dalam "Mod Peranti" (tetapan & skor
+hanya dalam satu telefon/komputer). Untuk PdPR — murid main di rumah dan
+skor masuk kepada guru — sambungkan Firebase. Percuma (pelan Spark).
+Masa: ~15 minit, sekali sahaja (oleh Cikgu Dzurri).
+
+LANGKAH 1 — Cipta projek
+  1. Buka https://console.firebase.google.com  → "Create a project"
+  2. Nama: belon-muzik (atau apa-apa). Google Analytics: boleh dimatikan.
+
+LANGKAH 2 — Hidupkan log masuk Emel/Kata Laluan
+  1. Menu kiri: Build → Authentication → Get started
+  2. Tab "Sign-in method" → Email/Password → Enable → Save
+  3. Tab "Users" → Add user (buat DUA akaun):
+       a) Akaun GURU (dikongsi semua guru)
+          Emel     : guru@belonmuzik.app
+          Password : dzurri
+       b) Akaun PENTADBIR UTAMA (Cikgu Dzurri sahaja — untuk Bank Soalan Umum)
+          Emel     : dzurri@belonmuzik.app
+          Password : <kata laluan KUAT anda sendiri, jangan kongsi>
+  * Emel tidak perlu wujud/sah; ia hanya nama akaun.
+  * Jika mahu guna emel lain, tukar di DUA tempat: firebase-config.js
+    (adminEmail / superEmail) DAN firestore.rules.
+
+LANGKAH 3 — Cipta pangkalan data Firestore
+  1. Build → Firestore Database → Create database
+  2. Lokasi: asia-southeast1 (Singapore) → Start in PRODUCTION mode
+  3. Tab "Rules" → padam semua → tampal SELURUH isi fail firestore.rules
+     → Publish
+
+LANGKAH 4 — Dapatkan firebaseConfig
+  1. ⚙️ Project settings → bahagian "Your apps" → ikon Web </>
+  2. Nama app: belon-web → Register app
+  3. Salin nilai apiKey, authDomain, projectId, storageBucket,
+     messagingSenderId, appId → tampal ke dalam firebase-config.js
+     Contoh:
+       config: {
+         apiKey: "AIzaSyB....",
+         authDomain: "belon-muzik.firebaseapp.com",
+         projectId: "belon-muzik",
+         storageBucket: "belon-muzik.appspot.com",
+         messagingSenderId: "1234567890",
+         appId: "1:1234567890:web:abc123"
+       },
+  (apiKey Firebase bukan rahsia — keselamatan dikawal oleh firestore.rules.)
+
+LANGKAH 5 — Terbitkan semula
+  1. Dalam sw.js tukar VERSION (cth. 'v4.0.0' → 'v4.0.1')
+  2. Seret semula folder ke Netlify (Deploys → drag & drop)
+
+LANGKAH 6 — Uji
+  1. Buka pautan → ⚙️ Admin Guru → kata laluan: dzurri
+     Cip di atas mesti hijau "🟢 Dalam Talian (Firebase)".
+  2. Tab 🌐 Bank Umum → log masuk Pentadbir Utama (akaun b)
+     → "⬆️ Muat naik soalan lalai ke Firebase" (312 soalan).
+  3. Tab 🏫 Kelas & Sekolah → "Cipta Kelas Baharu" → isi → Simpan
+     → kongsi pautan / QR kepada murid.
+
+MENAMBAH SOALAN KE BANK UMUM
+  Cara mudah : Admin → 🌐 Bank Umum → muat naik PDF/DOCX → semak → Simpan.
+  Cara manual: Firebase Console → Firestore → koleksi "soalan" → Add document:
+       q      (string)  : Apakah maksud forte?
+       opts   (array)   : ["Lembut", "Kuat", "Sangat kuat", "Sederhana"]
+       ans    (number)  : 1          ← 0 = A, 1 = B, 2 = C, 3 = D
+       topik  (string)  : Terminologi
+       tahap  (string)  : UMUM  (atau T1 / T2 / T3)
+       aktif  (boolean) : true
+     Selepas tambah secara manual, buka Admin → 🌐 Bank Umum →
+     "🔄 Kemas kini bank untuk murid".
+
+KUOTA PERCUMA (Spark)
+  50,000 bacaan & 20,000 tulisan sehari. Bank Umum dibaca sebagai SATU
+  dokumen ringkasan (bank/umum) dan disimpan 6 jam dalam peranti murid,
+  jadi ratusan murid sehari masih jauh di bawah had.
+
+KESELAMATAN
+  - Murid hanya boleh MENGHANTAR skor; tidak boleh membaca skor orang lain.
+  - Kata laluan "dzurri" dikongsi semua guru: mana-mana guru yang tahu kod
+    kelas guru lain boleh membuka kelas itu. Jangan kongsi kod kelas secara awam.
+  - Hanya akaun Pentadbir Utama boleh mengubah Bank Soalan Umum.

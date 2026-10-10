@@ -1,0 +1,67 @@
+rules_version = '2';
+// =============================================================================
+// Peraturan Keselamatan Firestore — Belon Teori Muzik AR
+// Tampal SEMUA kandungan ini di Firebase Console → Firestore Database → Rules → Publish
+// PENTING: emel di bawah MESTI sama dengan firebase-config.js
+// =============================================================================
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function emel() { return request.auth != null ? request.auth.token.email : ''; }
+    function isSuper() { return emel() == 'dzurri@belonmuzik.app'; }                 // Pentadbir Utama
+    function isGuru()  { return emel() == 'guru@belonmuzik.app' || isSuper(); }       // akaun guru (kata laluan: dzurri)
+
+    // ---- Bank Soalan Umum: semua boleh baca, hanya Pentadbir Utama boleh ubah ----
+    match /soalan/{id} {
+      allow read: if true;
+      allow write: if isSuper()
+        && (request.method == 'delete' || validQuestion(request.resource.data));
+    }
+
+    // ---- Ringkasan bank untuk murid (1 dokumen = 1 bacaan) ----
+    match /bank/{id} {
+      allow read: if true;
+      allow write: if isSuper();
+    }
+
+    // ---- Kelas guru ----
+    match /kelas/{kod} {
+      allow read: if true;                                   // murid perlu baca nama sekolah / logo / tetapan
+      allow create, update: if isGuru() && kod.matches('^[A-Z0-9]{4,12}$')
+        && request.resource.data.size() < 40
+        && (!('logo' in request.resource.data) || request.resource.data.logo.size() < 400000);
+      allow delete: if isGuru();
+
+      match /soalan/{id} {
+        allow read: if true;
+        allow create, update: if isGuru() && validQuestion(request.resource.data);
+        allow delete: if isGuru();
+      }
+
+      // Skor murid: murid boleh HANTAR sahaja; hanya guru boleh baca / padam
+      match /skor/{id} {
+        allow create: if validScore(request.resource.data)
+          && get(/databases/$(database)/documents/kelas/$(kod)).data.get('rekod', true) == true
+          && get(/databases/$(database)/documents/kelas/$(kod)).data.get('aktif', true) == true;
+        allow read, delete: if isGuru();
+        allow update: if false;
+      }
+    }
+
+    function validQuestion(d) {
+      return d.q is string && d.q.size() > 0 && d.q.size() <= 1000
+        && d.opts is list && d.opts.size() >= 2 && d.opts.size() <= 6
+        && d.ans is int && d.ans >= 0 && d.ans < d.opts.size();
+    }
+    function validScore(d) {
+      return d.keys().hasOnly(['nama', 'kelas', 'skor', 'betul', 'jumlah', 'tahap', 'tarikh', 'butiran'])
+        && d.nama is string && d.nama.size() >= 2 && d.nama.size() <= 40
+        && d.kelas is string && d.kelas.size() <= 30
+        && d.skor is int && d.skor >= 0 && d.skor <= 5000
+        && d.betul is int && d.jumlah is int && d.betul >= 0 && d.betul <= d.jumlah && d.jumlah <= 100
+        && d.tahap is string && d.tahap.size() <= 60
+        && d.tarikh is int
+        && d.butiran is list && d.butiran.size() <= 100;
+    }
+  }
+}

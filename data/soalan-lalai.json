@@ -1,0 +1,4370 @@
+[
+{
+"id": "L001",
+"q": "Not semibrif mempunyai nilai masa bersamaan dengan:",
+"opts": [
+"1 not krocet",
+"2 not krocet",
+"4 not krocet",
+"8 not krocet"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L002",
+"q": "Satu not minim bersamaan dengan:",
+"opts": [
+"1 detik krocet",
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L003",
+"q": "Dua not kuaver bersamaan dengan:",
+"opts": [
+"Satu not minim",
+"Satu not krocet",
+"Satu not semibrif",
+"Satu not semikuaver"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L004",
+"q": "Satu not krocet bersamaan dengan berapa not semikuaver?",
+"opts": [
+"2",
+"3",
+"4",
+"8"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L005",
+"q": "Apakah fungsi tanda rehat?",
+"opts": [
+"Menunjukkan bunyi kuat",
+"Menunjukkan tempoh senyap",
+"Menunjukkan pic tinggi",
+"Menunjukkan perubahan tempo"
+],
+"ans": 1,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L006",
+"q": "Tanda rehat minim biasanya bernilai:",
+"opts": [
+"1 detik krocet",
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet"
+],
+"ans": 1,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L007",
+"q": "Skel C major mempunyai tanda nada:",
+"opts": [
+"1 syap",
+"1 flet",
+"Tiada tanda nada",
+"2 syap"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L008",
+"q": "Skel G major mempunyai tanda syap pada not:",
+"opts": [
+"F",
+"C",
+"G",
+"D"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L009",
+"q": "Skel D major mempunyai berapa tanda syap?",
+"opts": [
+"0",
+"1",
+"2",
+"3"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L010",
+"q": "Skel F major mempunyai tanda nada:",
+"opts": [
+"B♭",
+"E♭",
+"F♯",
+"A♭"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L011",
+"q": "Skel B♭ major mempunyai berapa tanda flet?",
+"opts": [
+"0",
+"1",
+"2",
+"3"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L012",
+"q": "Apakah ciri utama skel minor harmonik berbanding minor natural?",
+"opts": [
+"Darjah keenam dinaikkan",
+"Darjah ketujuh dinaikkan",
+"Darjah kedua diturunkan",
+"Semua not dinaikkan"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L013",
+"q": "Susunan not A minor harmonik menaik yang betul ialah:",
+"opts": [
+"A–B–C–D–E–F–G–A",
+"A–B–C–D–E–F–G♯–A",
+"A–B–C♯–D–E–F♯–G♯–A",
+"A–B♭–C–D–E–F–G♯–A"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L014",
+"q": "Minor relatif bagi C major ialah:",
+"opts": [
+"A minor",
+"D minor",
+"E minor",
+"G minor"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L015",
+"q": "Major relatif bagi A minor ialah:",
+"opts": [
+"G major",
+"C major",
+"D major",
+"F major"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L016",
+"q": "Tanda nada dengan dua syap ialah bagi:",
+"opts": [
+"F major",
+"B♭ major",
+"D major",
+"C major"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L017",
+"q": "Tanda nada dengan dua flet ialah bagi:",
+"opts": [
+"G major",
+"D major",
+"B♭ major",
+"A major"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L018",
+"q": "Dalam klef trebel, garisan paling bawah ialah not:",
+"opts": [
+"E",
+"G",
+"B",
+"D"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L019",
+"q": "Dalam klef trebel, garisan kedua dari bawah ialah not:",
+"opts": [
+"E",
+"G",
+"B",
+"D"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L020",
+"q": "Dalam klef bass, garisan paling bawah ialah not:",
+"opts": [
+"G",
+"A",
+"E",
+"B"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L021",
+"q": "Dalam klef bass, garisan kedua dari bawah ialah not:",
+"opts": [
+"A",
+"C",
+"D",
+"B"
+],
+"ans": 3,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L022",
+"q": "Satu not minim dan dua not krocet dalam meter 4/4 berjumlah:",
+"opts": [
+"2 detik",
+"3 detik",
+"4 detik",
+"5 detik"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L023",
+"q": "Triad tonik D major ialah:",
+"opts": [
+"D–F♯–A",
+"D–F–A",
+"D–G–B",
+"D–E–A"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L024",
+"q": "Triad tonik B♭ major ialah:",
+"opts": [
+"B♭–D–F",
+"B♭–D♭–F",
+"B♭–E♭–G",
+"B♭–C–F"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L025",
+"q": "Triad tonik B minor ialah:",
+"opts": [
+"B–D–F♯",
+"B–D♯–F♯",
+"B–E–G",
+"B–C♯–F♯"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L026",
+"q": "Triad major dibina daripada:",
+"opts": [
+"Tonik, minor ke-3, perfek ke-5",
+"Tonik, major ke-3, perfek ke-5",
+"Tonik, perfek ke-4, major ke-6",
+"Tonik, major ke-2, perfek ke-5"
+],
+"ans": 1,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L027",
+"q": "Jeda antara C dengan D ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L028",
+"q": "Jeda antara E dengan F ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L029",
+"q": "Jeda antara C dengan E♭ ialah:",
+"opts": [
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L030",
+"q": "Jeda antara C dengan E ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L031",
+"q": "Jeda antara C dengan F ialah:",
+"opts": [
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5",
+"Minor ke-6"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L032",
+"q": "Jeda antara C dengan G ialah:",
+"opts": [
+"Perfek ke-4",
+"Perfek ke-5",
+"Major ke-6",
+"Minor ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L033",
+"q": "Jeda antara C dengan A♭ ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L034",
+"q": "Jeda antara C dengan B ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 3,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L035",
+"q": "Jeda antara C dengan C' pada oktaf lebih tinggi ialah:",
+"opts": [
+"Major ke-7",
+"Minor ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 2,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L036",
+"q": "Angka atas dalam tanda masa 3/4 menunjukkan:",
+"opts": [
+"Tiga bar",
+"Tiga unit detik mengikut angka bawah",
+"Tiga not minim",
+"Tiga not semibrif"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L037",
+"q": "Meter 4/4 lazimnya mempunyai nilai empat not krocet dalam satu bar. Pernyataan ini:",
+"opts": [
+"Betul",
+"Salah",
+"Betul hanya dalam 3/4",
+"Betul hanya dalam 6/8"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L038",
+"q": "Meter 3/8 menunjukkan satu bar mengandungi:",
+"opts": [
+"Tiga not kuaver",
+"Tiga not minim",
+"Lapan not krocet",
+"Enam not kuaver"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L039",
+"q": "Meter 6/8 lazimnya dirasai dalam:",
+"opts": [
+"Dua kumpulan tiga kuaver",
+"Tiga kumpulan empat kuaver",
+"Empat kumpulan dua kuaver",
+"Enam kumpulan not minim"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L040",
+"q": "Apakah maksud Allegro?",
+"opts": [
+"Sangat perlahan",
+"Sederhana perlahan",
+"Cepat dan riang",
+"Semakin perlahan"
+],
+"ans": 2,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 1)"
+},
+{
+"id": "L041",
+"q": "Satu not krocet bersamaan dengan berapa not kuaver?",
+"opts": [
+"1",
+"2",
+"3",
+"4"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L042",
+"q": "Satu not minim bertitik mempunyai nilai:",
+"opts": [
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet",
+"6 detik krocet"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L043",
+"q": "Empat not semikuaver bersamaan dengan:",
+"opts": [
+"Satu not kuaver",
+"Satu not krocet",
+"Satu not minim",
+"Satu not semibrif"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L044",
+"q": "Tanda rehat krocet menunjukkan:",
+"opts": [
+"Senyap selama satu detik krocet",
+"Senyap selama dua detik krocet",
+"Senyap selama empat detik krocet",
+"Senyap selama satu bar sahaja"
+],
+"ans": 0,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L045",
+"q": "Skel G major mempunyai tanda nada:",
+"opts": [
+"F♯",
+"C♯",
+"B♭",
+"E♭"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L046",
+"q": "Skel D major mengandungi tanda syap:",
+"opts": [
+"F♯ sahaja",
+"F♯ dan C♯",
+"F♯ dan G♯",
+"C♯ dan D♯"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L047",
+"q": "Skel F major mempunyai satu tanda flet, iaitu:",
+"opts": [
+"B♭",
+"E♭",
+"A♭",
+"D♭"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L048",
+"q": "Minor relatif bagi D major ialah:",
+"opts": [
+"A minor",
+"B minor",
+"C♯ minor",
+"E minor"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L049",
+"q": "Minor relatif bagi B♭ major ialah:",
+"opts": [
+"G minor",
+"A minor",
+"D minor",
+"E♭ minor"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L050",
+"q": "Dalam skel minor harmonik, darjah ketujuh dinaikkan untuk:",
+"opts": [
+"Menghapuskan tanda nada",
+"Membentuk leading note ke tonik",
+"Menurunkan tonik",
+"Menjadikan skel major"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L051",
+"q": "Dalam klef trebel, ruang paling bawah ialah not:",
+"opts": [
+"D",
+"F",
+"A",
+"E"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L052",
+"q": "Dalam klef trebel, garisan paling atas ialah not:",
+"opts": [
+"F",
+"A",
+"E",
+"G"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L053",
+"q": "Dalam klef bass, garisan paling bawah ialah not:",
+"opts": [
+"G",
+"B",
+"D",
+"F"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L054",
+"q": "Dalam klef bass, garisan paling atas ialah not:",
+"opts": [
+"A",
+"C",
+"F",
+"G"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L055",
+"q": "Dalam meter 3/4, satu not minim diikuti satu not krocet melengkapkan:",
+"opts": [
+"Satu bar",
+"Dua bar",
+"Setengah bar",
+"Empat bar"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L056",
+"q": "Triad tonik F major ialah:",
+"opts": [
+"F–A–C",
+"F–A♭–C",
+"F–B♭–D",
+"F–G–C"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L057",
+"q": "Triad tonik G major ialah:",
+"opts": [
+"G–B–D",
+"G–B♭–D",
+"G–C–E",
+"G–A–D"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L058",
+"q": "Triad tonik E minor ialah:",
+"opts": [
+"E–G–B",
+"E–G♯–B",
+"E–A–C",
+"E–F♯–B"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L059",
+"q": "Triad minor mempunyai susunan:",
+"opts": [
+"Tonik, major ke-3, perfek ke-5",
+"Tonik, minor ke-3, perfek ke-5",
+"Tonik, perfek ke-4, major ke-6",
+"Tonik, major ke-2, perfek ke-5"
+],
+"ans": 1,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L060",
+"q": "Jeda antara D dengan E♭ ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L061",
+"q": "Jeda antara G dengan A ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L062",
+"q": "Jeda antara A dengan C ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L063",
+"q": "Jeda antara F dengan A ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L064",
+"q": "Jeda antara D dengan G ialah:",
+"opts": [
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5",
+"Minor ke-6"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L065",
+"q": "Jeda antara G dengan D' ialah:",
+"opts": [
+"Perfek ke-4",
+"Perfek ke-5",
+"Major ke-6",
+"Minor ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L066",
+"q": "Jeda antara A dengan F' ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L067",
+"q": "Jeda antara C dengan B ialah:",
+"opts": [
+"Minor ke-7",
+"Major ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L068",
+"q": "Meter 2/4 biasanya mempunyai:",
+"opts": [
+"Dua detik krocet",
+"Tiga detik krocet",
+"Empat detik krocet",
+"Enam detik krocet"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L069",
+"q": "Meter 3/4 lazimnya digunakan untuk irama:",
+"opts": [
+"Waltz",
+"March 2-beat sahaja",
+"Irama tanpa detik",
+"Semua lagu mesti dimainkan dalam enam"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L070",
+"q": "Meter 4/4 mempunyai angka bawah 4 yang menunjukkan unit:",
+"opts": [
+"Semibrif",
+"Minim",
+"Krocet",
+"Kuaver"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L071",
+"q": "Meter 3/8 mempunyai angka bawah 8 yang menunjukkan unit:",
+"opts": [
+"Krocet",
+"Kuaver",
+"Minim",
+"Semibrif"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L072",
+"q": "Apakah maksud piano (p) dalam dinamik?",
+"opts": [
+"Lembut",
+"Kuat",
+"Sangat kuat",
+"Semakin cepat"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L073",
+"q": "Apakah maksud forte (f)?",
+"opts": [
+"Lembut",
+"Kuat",
+"Semakin perlahan",
+"Terputus-putus"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L074",
+"q": "Apakah maksud legato?",
+"opts": [
+"Not terpisah-pisah",
+"Not dimainkan bersambung dan lancar",
+"Bunyi semakin kuat",
+"Tempo semakin cepat"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L075",
+"q": "Apakah maksud staccato?",
+"opts": [
+"Not dimainkan pendek dan terpisah",
+"Not dimainkan bersambung",
+"Tempo semakin perlahan",
+"Bunyi semakin lembut"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L076",
+"q": "Apakah maksud ritardando?",
+"opts": [
+"Tempo semakin cepat",
+"Tempo semakin perlahan",
+"Bunyi semakin kuat",
+"Bunyi semakin lembut"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L077",
+"q": "Tanda natural (♮) berfungsi untuk:",
+"opts": [
+"Menaikkan not dua semiton",
+"Membatalkan kesan syap atau flet pada not berkenaan",
+"Menjadikan not lebih panjang",
+"Menandakan rehat"
+],
+"ans": 1,
+"topik": "Tanda Kromat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L078",
+"q": "Tanda flat (♭) menurunkan pic sebanyak:",
+"opts": [
+"Satu semiton",
+"Dua semiton",
+"Tiga semiton",
+"Satu oktaf"
+],
+"ans": 0,
+"topik": "Tanda Kromat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 2)"
+},
+{
+"id": "L079",
+"q": "Satu not semibrif bersamaan dengan:",
+"opts": [
+"Dua minim",
+"Dua krocet",
+"Empat kuaver",
+"Lapan minim"
+],
+"ans": 0,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L080",
+"q": "Satu not minim bertitik bersamaan dengan:",
+"opts": [
+"1 detik krocet",
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L081",
+"q": "Dua not semikuaver bersamaan dengan:",
+"opts": [
+"Satu not kuaver",
+"Satu not krocet",
+"Satu not minim",
+"Satu not semibrif"
+],
+"ans": 0,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L082",
+"q": "Rehat semibrif mempunyai nilai masa:",
+"opts": [
+"1 detik krocet",
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet"
+],
+"ans": 3,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L083",
+"q": "Susunan skel C major menaik yang betul ialah:",
+"opts": [
+"C–D–E–F–G–A–B–C",
+"C–D–E♭–F–G–A♭–B♭–C",
+"C–D♭–E–F–G–A–B–C",
+"C–D–E–F♯–G–A–B–C"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L084",
+"q": "Skel A minor harmonik mempunyai not G yang dinaikkan menjadi:",
+"opts": [
+"G♭",
+"G♯",
+"A♭",
+"F♯"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L085",
+"q": "Skel dengan satu syap ialah:",
+"opts": [
+"F major",
+"G major",
+"B♭ major",
+"C major"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L086",
+"q": "Skel dengan dua flet ialah:",
+"opts": [
+"F major",
+"B♭ major",
+"G major",
+"D major"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L087",
+"q": "Tanda nada D major mengandungi:",
+"opts": [
+"F♯ sahaja",
+"F♯ dan C♯",
+"B♭ dan E♭",
+"B♭ sahaja"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L088",
+"q": "Minor relatif bagi F major ialah:",
+"opts": [
+"D minor",
+"E minor",
+"A minor",
+"G minor"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L089",
+"q": "Dalam klef trebel, ruang paling atas ialah not:",
+"opts": [
+"F",
+"A",
+"C",
+"E"
+],
+"ans": 3,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L090",
+"q": "Dalam klef trebel, garisan ketiga dari bawah ialah not:",
+"opts": [
+"G",
+"B",
+"D",
+"F"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L091",
+"q": "Dalam klef bass, ruang paling bawah ialah not:",
+"opts": [
+"A",
+"C",
+"E",
+"G"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L092",
+"q": "Jika satu bar 4/4 mengandungi satu not minim dan satu not krocet, berapa detik lagi diperlukan untuk melengkapkan bar?",
+"opts": [
+"1",
+"2",
+"3",
+"4"
+],
+"ans": 0,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L093",
+"q": "Triad tonik C major ialah:",
+"opts": [
+"C–E–G",
+"C–E♭–G",
+"C–F–A",
+"C–D–G"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L094",
+"q": "Triad tonik A minor ialah:",
+"opts": [
+"A–C–E",
+"A–C♯–E",
+"A–D–F",
+"A–B–E"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L095",
+"q": "Jeda antara B dengan C ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L096",
+"q": "Jeda antara F dengan G ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L097",
+"q": "Jeda antara E dengan G ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L098",
+"q": "Jeda antara D dengan F♯ ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L099",
+"q": "Jeda antara A dengan D ialah:",
+"opts": [
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5",
+"Minor ke-6"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L100",
+"q": "Jeda antara E dengan C' ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L101",
+"q": "Jeda antara D dengan B ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L102",
+"q": "Jeda antara D dengan C' ialah:",
+"opts": [
+"Minor ke-7",
+"Major ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L103",
+"q": "Jeda antara G dengan G' ialah:",
+"opts": [
+"Major ke-7",
+"Minor ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 2,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L104",
+"q": "Meter 6/8 lazimnya mempunyai berapa kuaver dalam satu bar?",
+"opts": [
+"2",
+"3",
+"4",
+"6"
+],
+"ans": 3,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L105",
+"q": "Meter 2/4 biasanya sesuai dengan rasa detik:",
+"opts": [
+"Dua detik utama",
+"Tiga detik utama",
+"Empat detik utama",
+"Enam detik utama"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L106",
+"q": "Dalam meter 3/8, angka 3 menunjukkan:",
+"opts": [
+"Tiga bar",
+"Tiga unit kuaver setiap bar",
+"Tiga not minim setiap bar",
+"Tiga detik krocet setiap bar"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L107",
+"q": "Dalam meter 4/4, angka bawah 4 merujuk kepada unit:",
+"opts": [
+"Kuaver",
+"Krocet",
+"Minim",
+"Semibrif"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L108",
+"q": "Apakah maksud accelerando?",
+"opts": [
+"Tempo semakin cepat",
+"Tempo semakin perlahan",
+"Bunyi semakin lembut",
+"Bunyi terputus-putus"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L109",
+"q": "Apakah maksud diminuendo?",
+"opts": [
+"Bunyi semakin kuat",
+"Bunyi semakin lembut",
+"Tempo semakin cepat",
+"Tempo semakin perlahan"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L110",
+"q": "Apakah maksud adagio?",
+"opts": [
+"Cepat",
+"Perlahan",
+"Sangat kuat",
+"Terputus-putus"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L111",
+"q": "Apakah maksud mezzo forte (mf)?",
+"opts": [
+"Sangat lembut",
+"Sederhana kuat",
+"Sangat kuat",
+"Semakin perlahan"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L112",
+"q": "Simbol syap (♯) berfungsi untuk:",
+"opts": [
+"Menaikkan pic satu semiton",
+"Menurunkan pic satu semiton",
+"Memanjangkan nilai not",
+"Menandakan senyap"
+],
+"ans": 0,
+"topik": "Tanda Kromat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L113",
+"q": "Apakah maksud a cappella?",
+"opts": [
+"Nyanyian tanpa iringan alat muzik",
+"Muzik dimainkan sangat perlahan",
+"Muzik untuk alat bertali sahaja",
+"Nyanyian dengan iringan orkestra"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L114",
+"q": "Apakah maksud staccato?",
+"opts": [
+"Not dimainkan pendek dan terpisah",
+"Not dimainkan lancar dan bersambung",
+"Tempo semakin cepat",
+"Bunyi semakin kuat"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik (40 Soalan Setiap Set) (Set 3)"
+},
+{
+"id": "L115",
+"q": "Not semibrif mempunyai nilai masa yang bersamaan dengan:",
+"opts": [
+"1 detik krocet",
+"2 detik krocet",
+"4 detik krocet",
+"8 detik krocet"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 1)"
+},
+{
+"id": "L116",
+"q": "Apakah fungsi tanda rehat dalam notasi muzik?",
+"opts": [
+"Menunjukkan bunyi kuat",
+"Menunjukkan tempoh senyap",
+"Menunjukkan perubahan nada",
+"Menunjukkan tempo sahaja"
+],
+"ans": 1,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 1)"
+},
+{
+"id": "L117",
+"q": "Skel C major mempunyai:",
+"opts": [
+"1 syap",
+"1 flet",
+"Tiada tanda nada",
+"2 syap"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 1)"
+},
+{
+"id": "L118",
+"q": "Skel yang mempunyai dua tanda flet ialah:",
+"opts": [
+"G major",
+"D major",
+"B♭ major",
+"F major"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 1)"
+},
+{
+"id": "L119",
+"q": "Dalam meter 4/4, satu not minim dan dua not krocet memenuhi:",
+"opts": [
+"2 detik",
+"3 detik",
+"4 detik",
+"5 detik"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 1)"
+},
+{
+"id": "L120",
+"q": "Apakah maksud istilah Allegro?",
+"opts": [
+"Perlahan",
+"Sederhana",
+"Cepat dan riang",
+"Sangat perlahan"
+],
+"ans": 2,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 1)"
+},
+{
+"id": "L121",
+"q": "Tanda rehat minim mempunyai nilai masa:",
+"opts": [
+"1 detik krocet",
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet"
+],
+"ans": 1,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 2)"
+},
+{
+"id": "L122",
+"q": "Skel D major mempunyai minor relatif:",
+"opts": [
+"E minor",
+"B minor",
+"F♯ minor",
+"A minor"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 2)"
+},
+{
+"id": "L123",
+"q": "Angka atas dalam tanda masa 3/4 menunjukkan:",
+"opts": [
+"Tiga bar",
+"Tiga detik asas dalam satu bar",
+"Tiga not minim",
+"Tiga not semibrif"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 2)"
+},
+{
+"id": "L124",
+"q": "Dalam meter 3/4, satu not minim diikuti satu not krocet melengkapkan:",
+"opts": [
+"1 bar",
+"2 bar",
+"Setengah bar",
+"4 bar"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 2)"
+},
+{
+"id": "L125",
+"q": "Meter 6/8 lazimnya mempunyai:",
+"opts": [
+"Dua kumpulan, setiap satu tiga kuaver",
+"Tiga kumpulan, setiap satu dua minim",
+"Enam kumpulan, setiap satu satu minim",
+"Empat kumpulan, setiap satu dua kuaver"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 2)"
+},
+{
+"id": "L126",
+"q": "Apakah maksud simbol dinamik p (piano)?",
+"opts": [
+"Kuat",
+"Lembut",
+"Semakin kuat",
+"Semakin perlahan"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 2)"
+},
+{
+"id": "L127",
+"q": "Apakah maksud crescendo?",
+"opts": [
+"Bunyi semakin kuat",
+"Bunyi semakin perlahan",
+"Bunyi terputus-putus",
+"Bunyi secara lembut"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 2)"
+},
+{
+"id": "L128",
+"q": "Apakah fungsi tanda sharp (♯)?",
+"opts": [
+"Menurunkan pic satu semiton",
+"Menaikkan pic satu semiton",
+"Memanjangkan not",
+"Memendekkan not"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 2)"
+},
+{
+"id": "L129",
+"q": "Not minim mempunyai nilai masa:",
+"opts": [
+"1 detik krocet",
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L130",
+"q": "Apakah tanda rehat yang bernilai satu detik krocet?",
+"opts": [
+"Rehat minim",
+"Rehat semibrif",
+"Rehat krocet",
+"Rehat semikuaver"
+],
+"ans": 2,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L131",
+"q": "Apakah tanda nada bagi B♭ major?",
+"opts": [
+"2 syap",
+"1 flet",
+"2 flet",
+"1 syap"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L132",
+"q": "Skel G major mempunyai tanda nada yang sama dengan:",
+"opts": [
+"E minor",
+"A minor",
+"D minor",
+"B♭ minor"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L133",
+"q": "Dalam meter 2/4, satu bar biasanya mempunyai nilai:",
+"opts": [
+"Dua detik krocet",
+"Tiga detik krocet",
+"Empat detik krocet",
+"Enam detik krocet"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L134",
+"q": "Meter 3/8 mengandungi nilai masa bersamaan dengan:",
+"opts": [
+"Tiga not kuaver",
+"Tiga not krocet",
+"Tiga not minim",
+"Lapan not kuaver"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L135",
+"q": "Meter yang lazim digunakan untuk irama waltz ialah:",
+"opts": [
+"2/4",
+"3/4",
+"4/4",
+"3/8"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L136",
+"q": "Apakah maksud legato?",
+"opts": [
+"Not dimainkan terputus-putus",
+"Not dimainkan bersambung dan lancar",
+"Not dimainkan dengan kuat",
+"Not dimainkan semakin cepat"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L137",
+"q": "Istilah ritardando bermaksud:",
+"opts": [
+"Tempo semakin cepat",
+"Tempo semakin perlahan",
+"Bunyi semakin kuat",
+"Bunyi semakin lembut"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "3 Set Soalan Teori Muzik Menengah Rendah (Set 3)"
+},
+{
+"id": "L138",
+"q": "Satu not semibrif bersamaan dengan berapa not minim?",
+"opts": [
+"1",
+"2",
+"3",
+"4"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L139",
+"q": "Satu not kuaver mempunyai nilai separuh daripada:",
+"opts": [
+"Not semikuaver",
+"Not krocet",
+"Not minim bertitik",
+"Not semibrif"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L140",
+"q": "Tiga not krocet mempunyai jumlah nilai masa yang sama dengan:",
+"opts": [
+"Satu not minim bertitik",
+"Satu not minim",
+"Satu not semibrif",
+"Satu not kuaver"
+],
+"ans": 0,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L141",
+"q": "Dua not minim bersamaan dengan:",
+"opts": [
+"Satu not semibrif",
+"Satu not krocet",
+"Dua not kuaver",
+"Satu not minim bertitik"
+],
+"ans": 0,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L142",
+"q": "Dalam meter 4/4, satu not minim bertitik dan satu not kuaver berjumlah:",
+"opts": [
+"2 detik krocet",
+"2½ detik krocet",
+"3½ detik krocet",
+"4 detik krocet"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L143",
+"q": "Apakah not ketujuh dalam skel C major menaik?",
+"opts": [
+"A",
+"B",
+"C",
+"D"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L144",
+"q": "Skel A major mempunyai berapa tanda syap?",
+"opts": [
+"1",
+"2",
+"3",
+"4"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L145",
+"q": "Skel E♭ major mempunyai berapa tanda flet?",
+"opts": [
+"1",
+"2",
+"3",
+"4"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L146",
+"q": "Tanda nada bagi E minor ialah:",
+"opts": [
+"Tiada tanda nada",
+"1 syap",
+"2 syap",
+"1 flet"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L147",
+"q": "Dalam skel minor harmonik D minor, not ketujuh yang dinaikkan ialah:",
+"opts": [
+"C♯",
+"B♭",
+"D♯",
+"A♯"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L148",
+"q": "Skel dengan dua syap ialah:",
+"opts": [
+"D major",
+"A major",
+"F major",
+"E♭ major"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L149",
+"q": "Skel dengan satu flet ialah:",
+"opts": [
+"C major",
+"F major",
+"G major",
+"D major"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L150",
+"q": "Dalam klef trebel, ruang kedua dari bawah ialah not:",
+"opts": [
+"F",
+"A",
+"C",
+"E"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L151",
+"q": "Dalam klef trebel, garisan paling atas ialah:",
+"opts": [
+"F",
+"A",
+"E",
+"G"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L152",
+"q": "Dalam klef bass, garisan paling atas ialah:",
+"opts": [
+"A",
+"C",
+"F",
+"G"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L153",
+"q": "Dalam klef bass, ruang kedua dari bawah ialah:",
+"opts": [
+"A",
+"C",
+"E",
+"G"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L154",
+"q": "Triad tonik A major ialah:",
+"opts": [
+"A–C–E",
+"A–C♯–E",
+"A–D–F♯",
+"A–B–E"
+],
+"ans": 1,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L155",
+"q": "Triad tonik E♭ major ialah:",
+"opts": [
+"E♭–G–B♭",
+"E♭–G♭–B♭",
+"E♭–A♭–C",
+"E♭–F–B♭"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L156",
+"q": "Triad tonik G minor ialah:",
+"opts": [
+"G–B–D",
+"G–B♭–D",
+"G–C–E♭",
+"G–A–D"
+],
+"ans": 1,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L157",
+"q": "Triad tonik C major terdiri daripada:",
+"opts": [
+"C–E♭–G",
+"C–E–G",
+"C–F–A",
+"C–D–G"
+],
+"ans": 1,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L158",
+"q": "Jeda dari F ke A♭ ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L159",
+"q": "Jeda dari D ke F ialah:",
+"opts": [
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L160",
+"q": "Jeda dari G ke C' ialah:",
+"opts": [
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5",
+"Major ke-6"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L161",
+"q": "Jeda dari E ke B ialah:",
+"opts": [
+"Perfek ke-4",
+"Perfek ke-5",
+"Minor ke-6",
+"Major ke-6"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L162",
+"q": "Jeda dari A ke F' ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L163",
+"q": "Jeda dari D ke C' ialah:",
+"opts": [
+"Minor ke-7",
+"Major ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L164",
+"q": "Jeda dari B ke B' ialah:",
+"opts": [
+"Major ke-7",
+"Minor ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 2,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L165",
+"q": "Meter 2/4 lazimnya mempunyai berapa detik krocet dalam satu bar?",
+"opts": [
+"2",
+"3",
+"4",
+"6"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L166",
+"q": "Meter 3/4 lazimnya mempunyai berapa detik krocet dalam satu bar?",
+"opts": [
+"2",
+"3",
+"4",
+"6"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L167",
+"q": "Dalam meter 6/8, angka bawah 8 menunjukkan unit not:",
+"opts": [
+"Minim",
+"Krocet",
+"Kuaver",
+"Semikuaver"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L168",
+"q": "Meter 4/4 juga sering disebut sebagai:",
+"opts": [
+"Duple meter",
+"Triple meter",
+"Quadruple meter",
+"Compound duple sahaja"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L169",
+"q": "Meter 3/8 menunjukkan tiga unit:",
+"opts": [
+"Minim",
+"Krocet",
+"Kuaver",
+"Semibrif"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L170",
+"q": "Apakah maksud andante?",
+"opts": [
+"Sangat cepat",
+"Pada kelajuan berjalan",
+"Semakin kuat",
+"Terputus-putus"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L171",
+"q": "Apakah maksud fortissimo (ff)?",
+"opts": [
+"Sangat lembut",
+"Lembut",
+"Kuat",
+"Sangat kuat"
+],
+"ans": 3,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L172",
+"q": "Apakah maksud diminuendo?",
+"opts": [
+"Bunyi semakin kuat",
+"Bunyi semakin lembut",
+"Tempo semakin cepat",
+"Tempo kekal"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L173",
+"q": "Apakah fungsi tanda natural (♮)?",
+"opts": [
+"Membatalkan syap atau flet pada not berkenaan",
+"Menaikkan not dua semiton",
+"Menurunkan not satu oktaf",
+"Menandakan rehat"
+],
+"ans": 0,
+"topik": "Tanda Kromat",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L174",
+"q": "Apakah maksud a tempo?",
+"opts": [
+"Kembali kepada tempo asal",
+"Semakin perlahan",
+"Semakin kuat",
+"Tanpa iringan"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L175",
+"q": "Apakah maksud pizzicato bagi alat bertali?",
+"opts": [
+"Menggesek dengan bow",
+"Memetik tali dengan jari",
+"Memainkan secara kuat",
+"Memainkan dengan mute"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L176",
+"q": "Dalam meter 6/8, satu bar mengandungi nilai masa bersamaan dengan:",
+"opts": [
+"6 not kuaver",
+"6 not minim",
+"3 not semibrif",
+"8 not krocet"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L177",
+"q": "Apakah maksud moderato?",
+"opts": [
+"Pada kelajuan sederhana",
+"Sangat cepat",
+"Sangat perlahan",
+"Semakin kuat"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 4)"
+},
+{
+"id": "L178",
+"q": "Empat not kuaver bersamaan dengan:",
+"opts": [
+"Satu not minim",
+"Satu not krocet",
+"Satu not semibrif",
+"Satu not semikuaver"
+],
+"ans": 0,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L179",
+"q": "Not minim bertitik mempunyai nilai masa:",
+"opts": [
+"1 detik krocet",
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L180",
+"q": "Satu not krocet bertitik bersamaan dengan:",
+"opts": [
+"1 not kuaver",
+"3 not kuaver",
+"2 not minim",
+"4 not semibrif"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L181",
+"q": "Rehat kuaver mempunyai nilai masa:",
+"opts": [
+"Separuh detik krocet",
+"Satu detik krocet",
+"Dua detik krocet",
+"Empat detik krocet"
+],
+"ans": 0,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L182",
+"q": "Satu bar 3/4 yang mengandungi tiga not krocet adalah:",
+"opts": [
+"Kurang satu detik",
+"Lengkap",
+"Lebih satu detik",
+"Dua bar"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L183",
+"q": "Skel D major mempunyai not syap:",
+"opts": [
+"F♯ dan C♯",
+"F♯ dan G♯",
+"C♯ dan D♯",
+"G♯ dan A♯"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L184",
+"q": "Skel B♭ major mempunyai not flet:",
+"opts": [
+"B♭ sahaja",
+"B♭ dan E♭",
+"E♭ dan A♭",
+"A♭ sahaja"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L185",
+"q": "Skel E minor mempunyai tanda nada yang sama dengan:",
+"opts": [
+"G major",
+"F major",
+"D major",
+"B♭ major"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L186",
+"q": "Skel C minor mempunyai tiga tanda flet. Not fletnya ialah:",
+"opts": [
+"B♭, E♭, A♭",
+"B♭, E♭, D♭",
+"A♭, D♭, G♭",
+"B♭, A♭, D♭"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L187",
+"q": "Dalam skel E minor harmonik, not D dinaikkan menjadi:",
+"opts": [
+"D♭",
+"D♯",
+"C♯",
+"E♭"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L188",
+"q": "Major relatif bagi F♯ minor ialah:",
+"opts": [
+"A major",
+"C major",
+"E major",
+"D major"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L189",
+"q": "Dalam klef trebel, garisan ketiga dari bawah ialah:",
+"opts": [
+"G",
+"B",
+"D",
+"F"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L190",
+"q": "Dalam klef trebel, ruang paling atas ialah:",
+"opts": [
+"F",
+"A",
+"C",
+"E"
+],
+"ans": 3,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L191",
+"q": "Dalam klef bass, garisan ketiga dari bawah ialah:",
+"opts": [
+"B",
+"D",
+"F",
+"A"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L192",
+"q": "Dalam klef bass, ruang paling atas ialah:",
+"opts": [
+"A",
+"C",
+"E",
+"G"
+],
+"ans": 3,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L193",
+"q": "Triad tonik D minor ialah:",
+"opts": [
+"D–F–A",
+"D–F♯–A",
+"D–G–B♭",
+"D–E–A"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L194",
+"q": "Not tengah bagi triad tonik G major ialah:",
+"opts": [
+"G",
+"B",
+"D",
+"F♯"
+],
+"ans": 1,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L195",
+"q": "Jeda dari C ke D♭ ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L196",
+"q": "Jeda dari A ke C♯ ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L197",
+"q": "Jeda dari E ke A ialah:",
+"opts": [
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5",
+"Minor ke-6"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L198",
+"q": "Jeda dari F ke C' ialah:",
+"opts": [
+"Perfek ke-4",
+"Perfek ke-5",
+"Major ke-6",
+"Minor ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L199",
+"q": "Jeda dari D ke B ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L200",
+"q": "Jeda dari E ke D' ialah:",
+"opts": [
+"Minor ke-7",
+"Major ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L201",
+"q": "Jeda dari F ke F' ialah:",
+"opts": [
+"Major ke-7",
+"Minor ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 2,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L202",
+"q": "Meter 3/4 mempunyai unit not yang ditunjukkan oleh angka bawah:",
+"opts": [
+"2",
+"4",
+"8",
+"16"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L203",
+"q": "Meter 2/4 lazimnya dikelaskan sebagai meter:",
+"opts": [
+"Duple",
+"Triple",
+"Quadruple",
+"Compound triple"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L204",
+"q": "Meter 6/8 lazimnya dikelaskan sebagai:",
+"opts": [
+"Simple duple",
+"Simple triple",
+"Compound duple",
+"Compound quadruple"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L205",
+"q": "Meter 3/8 mempunyai berapa not kuaver dalam satu bar penuh?",
+"opts": [
+"2",
+"3",
+"4",
+"6"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L206",
+"q": "Meter 4/4 mempunyai berapa unit krocet dalam satu bar?",
+"opts": [
+"2",
+"3",
+"4",
+"8"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L207",
+"q": "Apakah maksud moderato?",
+"opts": [
+"Sederhana",
+"Sangat cepat",
+"Sangat perlahan",
+"Semakin kuat"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L208",
+"q": "Apakah maksud mezzo piano (mp)?",
+"opts": [
+"Sangat kuat",
+"Sederhana lembut",
+"Sederhana kuat",
+"Sangat lembut"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L209",
+"q": "Apakah maksud staccato?",
+"opts": [
+"Not panjang dan bersambung",
+"Not pendek dan terpisah",
+"Bunyi semakin kuat",
+"Tempo asal"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L210",
+"q": "Apakah maksud legato?",
+"opts": [
+"Not bersambung dengan lancar",
+"Not dimainkan pendek",
+"Tempo semakin cepat",
+"Bunyi sangat kuat"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L211",
+"q": "Apakah maksud solo?",
+"opts": [
+"Semua pemain berhenti",
+"Bahagian dimainkan oleh seorang pemain atau penyanyi",
+"Muzik tanpa melodi",
+"Muzik dimainkan sangat perlahan"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L212",
+"q": "Dalam meter 2/4, satu not minim memenuhi:",
+"opts": [
+"Setengah bar",
+"Satu bar penuh",
+"Dua bar",
+"Tiga bar"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 5)"
+},
+{
+"id": "L213",
+"q": "Lapan not semikuaver bersamaan dengan:",
+"opts": [
+"Satu not minim",
+"Satu not krocet",
+"Satu not semibrif",
+"Satu not kuaver"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L214",
+"q": "Satu not minim bertitik bersamaan dengan berapa not kuaver?",
+"opts": [
+"4",
+"5",
+"6",
+"8"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L215",
+"q": "Dua not krocet dan satu not minim berjumlah:",
+"opts": [
+"2 detik",
+"3 detik",
+"4 detik",
+"5 detik"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L216",
+"q": "Rehat minim dalam meter 3/4 bernilai:",
+"opts": [
+"Satu detik krocet",
+"Dua detik krocet",
+"Tiga detik krocet",
+"Empat detik krocet"
+],
+"ans": 1,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L217",
+"q": "Titik selepas not menambah nilai masa sebanyak:",
+"opts": [
+"Separuh nilai not asal",
+"Dua kali nilai not asal",
+"Satu detik tetap",
+"Satu oktaf"
+],
+"ans": 0,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L218",
+"q": "Skel B major mempunyai berapa tanda syap?",
+"opts": [
+"2",
+"3",
+"4",
+"5"
+],
+"ans": 3,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L219",
+"q": "Skel A♭ major mempunyai berapa tanda flet?",
+"opts": [
+"2",
+"3",
+"4",
+"5"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L220",
+"q": "Tanda nada satu flet menandakan skel major:",
+"opts": [
+"G major",
+"D major",
+"F major",
+"A major"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L221",
+"q": "Tanda nada dua syap menandakan skel major:",
+"opts": [
+"D major",
+"A major",
+"E major",
+"F major"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L222",
+"q": "Dalam skel G minor harmonik, not ketujuh yang dinaikkan ialah:",
+"opts": [
+"F♯",
+"E♭",
+"G♯",
+"D♯"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L223",
+"q": "Major relatif bagi D minor ialah:",
+"opts": [
+"C major",
+"F major",
+"G major",
+"B♭ major"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L224",
+"q": "Dalam klef trebel, garisan kedua dari bawah ialah:",
+"opts": [
+"E",
+"G",
+"B",
+"D"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L225",
+"q": "Dalam klef trebel, ruang ketiga dari bawah ialah:",
+"opts": [
+"A",
+"C",
+"E",
+"G"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L226",
+"q": "Dalam klef bass, garisan keempat dari bawah ialah:",
+"opts": [
+"B",
+"D",
+"F",
+"A"
+],
+"ans": 2,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L227",
+"q": "Triad tonik C minor ialah:",
+"opts": [
+"C–E♭–G",
+"C–E–G",
+"C–F–A",
+"C–D–G"
+],
+"ans": 0,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L228",
+"q": "Jeda dari G ke A♭ ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L229",
+"q": "Jeda dari B♭ ke D ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L230",
+"q": "Jeda dari A ke D ialah:",
+"opts": [
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5",
+"Minor ke-6"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L231",
+"q": "Jeda dari C ke A ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L232",
+"q": "Jeda dari E ke C' ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L233",
+"q": "Jeda dari F ke E' ialah:",
+"opts": [
+"Minor ke-7",
+"Major ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L234",
+"q": "Jeda dari A ke A' ialah:",
+"opts": [
+"Major ke-7",
+"Minor ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 2,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L235",
+"q": "Tanda masa 2/4 menunjukkan setiap bar mempunyai nilai bersamaan dengan:",
+"opts": [
+"Dua krocet",
+"Tiga krocet",
+"Empat krocet",
+"Enam kuaver"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L236",
+"q": "Tanda masa 3/4 menunjukkan setiap bar mempunyai nilai bersamaan dengan:",
+"opts": [
+"Dua krocet",
+"Tiga krocet",
+"Empat krocet",
+"Enam krocet"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L237",
+"q": "Meter 6/8 biasanya mempunyai aksen utama pada:",
+"opts": [
+"Detik pertama dan keempat kuaver",
+"Setiap kuaver sama kuat",
+"Detik kedua sahaja",
+"Detik keenam sahaja"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L238",
+"q": "Meter 3/8 mempunyai nilai satu bar bersamaan dengan:",
+"opts": [
+"3 kuaver",
+"3 krocet",
+"8 minim",
+"6 minim"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L239",
+"q": "Meter 4/4 lazimnya dikenali sebagai meter:",
+"opts": [
+"Duple",
+"Triple",
+"Quadruple",
+"Compound duple"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L240",
+"q": "Apakah maksud largo?",
+"opts": [
+"Sangat perlahan dan luas",
+"Sangat cepat",
+"Semakin kuat",
+"Pendek dan terpisah"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L241",
+"q": "Apakah maksud forte (f)?",
+"opts": [
+"Lembut",
+"Kuat",
+"Sangat lembut",
+"Semakin perlahan"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L242",
+"q": "Apakah maksud crescendo?",
+"opts": [
+"Bunyi semakin kuat",
+"Bunyi semakin lembut",
+"Tempo semakin perlahan",
+"Kembali ke tempo asal"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L243",
+"q": "Apakah maksud ritardando?",
+"opts": [
+"Tempo semakin cepat",
+"Tempo semakin perlahan",
+"Bunyi semakin kuat",
+"Not dimainkan bersambung"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L244",
+"q": "Tanda syap (♯) menaikkan pic sebanyak:",
+"opts": [
+"Satu semiton",
+"Dua semiton",
+"Tiga semiton",
+"Satu oktaf"
+],
+"ans": 0,
+"topik": "Tanda Kromat",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L245",
+"q": "Apakah maksud tutti?",
+"opts": [
+"Seorang pemain sahaja",
+"Semua pemain atau kumpulan bermain bersama",
+"Nyanyian tanpa iringan",
+"Bahagian senyap"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L246",
+"q": "Apakah maksud fermata?",
+"opts": [
+"Memendekkan not secara tetap",
+"Memanjangkan not atau rehat melebihi nilai biasanya",
+"Menaikkan pic satu semiton",
+"Mengulang dari awal"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L247",
+"q": "Apakah maksud tenuto secara umum?",
+"opts": [
+"Not dimainkan dengan nilai penuh atau ditahan",
+"Not dimainkan sangat pendek",
+"Tempo semakin cepat",
+"Bunyi semakin lembut"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 6)"
+},
+{
+"id": "L248",
+"q": "Satu not krocet bertitik bersamaan dengan berapa detik krocet?",
+"opts": [
+"1",
+"1½",
+"2",
+"3"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L249",
+"q": "Enam not kuaver bersamaan dengan:",
+"opts": [
+"Satu not minim bertitik",
+"Satu not krocet",
+"Satu not minim",
+"Satu not semibrif"
+],
+"ans": 0,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L250",
+"q": "Tiga not kuaver mempunyai nilai masa bersamaan dengan:",
+"opts": [
+"Satu not minim",
+"Satu not krocet bertitik",
+"Satu not krocet",
+"Satu not semibrif"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L251",
+"q": "Tanda rehat semikuaver bernilai:",
+"opts": [
+"Satu detik krocet",
+"Setengah detik krocet",
+"Suku detik krocet",
+"Dua detik krocet"
+],
+"ans": 2,
+"topik": "Tanda Rehat",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L252",
+"q": "Skel D major mengandungi not F♯ dan:",
+"opts": [
+"G♯",
+"C♯",
+"D♯",
+"A♯"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L253",
+"q": "Skel B♭ major mengandungi B♭ dan:",
+"opts": [
+"A♭",
+"E♭",
+"D♭",
+"G♭"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L254",
+"q": "Skel F major mempunyai tanda nada yang sama dengan:",
+"opts": [
+"D minor",
+"E minor",
+"A minor",
+"B minor"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L255",
+"q": "Skel D major mempunyai minor relatif:",
+"opts": [
+"A minor",
+"B minor",
+"C♯ minor",
+"E minor"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L256",
+"q": "Dalam skel C minor harmonik, not ketujuh dinaikkan menjadi:",
+"opts": [
+"B natural",
+"B♭",
+"C♯",
+"A♭"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L257",
+"q": "Skel major dengan tiga flet ialah:",
+"opts": [
+"E♭ major",
+"A♭ major",
+"B♭ major",
+"D♭ major"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L258",
+"q": "Skel major dengan tiga syap ialah:",
+"opts": [
+"D major",
+"A major",
+"E major",
+"B major"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L259",
+"q": "Not pada garisan paling bawah klef trebel ialah:",
+"opts": [
+"E",
+"G",
+"B",
+"D"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L260",
+"q": "Not pada garisan paling bawah klef bass ialah:",
+"opts": [
+"G",
+"B",
+"D",
+"F"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L261",
+"q": "Dalam klef trebel, ruang pertama dari bawah ialah:",
+"opts": [
+"F",
+"A",
+"C",
+"E"
+],
+"ans": 0,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L262",
+"q": "Dalam triad tonik, not asas dinamakan:",
+"opts": [
+"Dominan",
+"Subdominan",
+"Tonik",
+"Leading note"
+],
+"ans": 2,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L263",
+"q": "Jeda dari C ke E♭ ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L264",
+"q": "Jeda dari D ke F♯ ialah:",
+"opts": [
+"Minor ke-3",
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L265",
+"q": "Jeda dari B ke E ialah:",
+"opts": [
+"Major ke-3",
+"Perfek ke-4",
+"Perfek ke-5",
+"Minor ke-6"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L266",
+"q": "Jeda dari C ke G ialah:",
+"opts": [
+"Perfek ke-4",
+"Perfek ke-5",
+"Major ke-6",
+"Minor ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L267",
+"q": "Jeda dari C ke B♭ ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 2,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L268",
+"q": "Jeda dari D ke D' ialah:",
+"opts": [
+"Major ke-7",
+"Minor ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 2,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L269",
+"q": "Dalam meter 3/4, not krocet biasanya menerima:",
+"opts": [
+"Satu detik",
+"Dua detik",
+"Tiga detik",
+"Empat detik"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L270",
+"q": "Meter 6/8 lazimnya dibahagikan kepada:",
+"opts": [
+"Dua kumpulan tiga kuaver",
+"Tiga kumpulan tiga kuaver",
+"Enam kumpulan minim",
+"Empat kumpulan krocet"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L271",
+"q": "Angka bawah 8 dalam tanda masa menunjukkan unit:",
+"opts": [
+"Minim",
+"Krocet",
+"Kuaver",
+"Semikuaver"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L272",
+"q": "Meter 4/4 lazimnya mempunyai berapa detik utama?",
+"opts": [
+"2",
+"3",
+"4",
+"6"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L273",
+"q": "Meter 2/4 biasanya mempunyai dua detik utama. Pernyataan ini:",
+"opts": [
+"Betul",
+"Salah",
+"Betul hanya bagi 6/8",
+"Betul hanya bagi 4/4"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L274",
+"q": "Apakah maksud vivace?",
+"opts": [
+"Sangat perlahan",
+"Cepat dan hidup",
+"Semakin perlahan",
+"Sangat lembut"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L275",
+"q": "Apakah maksud piano (p)?",
+"opts": [
+"Lembut",
+"Kuat",
+"Sangat kuat",
+"Semakin cepat"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L276",
+"q": "Apakah maksud a cappella?",
+"opts": [
+"Nyanyian tanpa iringan alat muzik",
+"Muzik untuk piano sahaja",
+"Semua alat bermain bersama",
+"Tempo semakin cepat"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L277",
+"q": "Apakah maksud repeat sign dalam skor?",
+"opts": [
+"Mengulang bahagian muzik",
+"Menamatkan lagu serta-merta",
+"Menukar klef",
+"Menurunkan pic"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L278",
+"q": "Apakah fungsi tanda fermata?",
+"opts": [
+"Mengulang bahagian muzik",
+"Memanjangkan not atau rehat melebihi nilai biasa",
+"Menandakan tempo cepat",
+"Menandakan bunyi lembut"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L279",
+"q": "Apakah maksud con brio?",
+"opts": [
+"Dengan semangat dan bertenaga",
+"Dengan sangat perlahan",
+"Dengan lembut",
+"Tanpa iringan"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L280",
+"q": "Apakah maksud presto?",
+"opts": [
+"Sangat perlahan",
+"Sangat cepat",
+"Sederhana",
+"Semakin lembut"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 7)"
+},
+{
+"id": "L281",
+"q": "Satu not minim bersamaan dengan berapa not kuaver?",
+"opts": [
+"2",
+"3",
+"4",
+"8"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L282",
+"q": "Satu not semibrif bertitik mempunyai nilai masa bersamaan dengan:",
+"opts": [
+"4 not krocet",
+"5 not krocet",
+"6 not krocet",
+"8 not krocet"
+],
+"ans": 2,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L283",
+"q": "Dua not krocet dan dua not kuaver berjumlah:",
+"opts": [
+"2 detik krocet",
+"3 detik krocet",
+"4 detik krocet",
+"6 detik krocet"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L284",
+"q": "Satu not kuaver bertitik bersamaan dengan:",
+"opts": [
+"1 not semikuaver",
+"3 not semikuaver",
+"2 not krocet",
+"4 not semikuaver"
+],
+"ans": 1,
+"topik": "Nilai Not",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L285",
+"q": "Dalam meter 3/4, satu not minim diikuti satu not krocet:",
+"opts": [
+"Melengkapkan satu bar",
+"Melebihi satu bar",
+"Tidak cukup satu detik",
+"Bersamaan dua bar"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L286",
+"q": "Skel E major mempunyai berapa tanda syap?",
+"opts": [
+"2",
+"3",
+"4",
+"5"
+],
+"ans": 2,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L287",
+"q": "Skel A♭ major mempunyai tanda flet:",
+"opts": [
+"B♭, E♭, A♭, D♭",
+"B♭, E♭, A♭",
+"B♭, E♭",
+"B♭ sahaja"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L288",
+"q": "Skel minor relatif bagi B♭ major ialah:",
+"opts": [
+"G minor",
+"A minor",
+"D minor",
+"E♭ minor"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L289",
+"q": "Skel major relatif bagi C♯ minor ialah:",
+"opts": [
+"E major",
+"A major",
+"B major",
+"D major"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L290",
+"q": "Dalam skel G minor harmonik, not F dinaikkan kepada:",
+"opts": [
+"F♯",
+"F♭",
+"G♭",
+"E♯"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L291",
+"q": "Tanda nada dua flet digunakan oleh skel major:",
+"opts": [
+"F major",
+"B♭ major",
+"E♭ major",
+"A♭ major"
+],
+"ans": 1,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L292",
+"q": "Tanda nada satu syap digunakan oleh skel major:",
+"opts": [
+"G major",
+"D major",
+"A major",
+"E major"
+],
+"ans": 0,
+"topik": "Skel & Tanda Nada",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L293",
+"q": "Dalam klef trebel, garisan keempat dari bawah ialah:",
+"opts": [
+"B",
+"D",
+"F",
+"A"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L294",
+"q": "Dalam klef trebel, ruang kedua dari bawah ialah:",
+"opts": [
+"F",
+"A",
+"C",
+"E"
+],
+"ans": 1,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L295",
+"q": "Dalam klef bass, garisan kedua dari bawah ialah:",
+"opts": [
+"A",
+"C",
+"D",
+"B"
+],
+"ans": 3,
+"topik": "Klef & Notasi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L296",
+"q": "Triad minor mempunyai not ketiga yang berjarak:",
+"opts": [
+"Major ke-3 daripada tonik",
+"Minor ke-3 daripada tonik",
+"Perfek ke-4 daripada tonik",
+"Major ke-2 daripada tonik"
+],
+"ans": 1,
+"topik": "Triad",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L297",
+"q": "Jeda dari E♭ ke F ialah:",
+"opts": [
+"Minor ke-2",
+"Major ke-2",
+"Minor ke-3",
+"Major ke-3"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L298",
+"q": "Jeda dari D ke A ialah:",
+"opts": [
+"Perfek ke-4",
+"Perfek ke-5",
+"Major ke-6",
+"Minor ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L299",
+"q": "Jeda dari G ke E' ialah:",
+"opts": [
+"Minor ke-6",
+"Major ke-6",
+"Minor ke-7",
+"Major ke-7"
+],
+"ans": 1,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L300",
+"q": "Jeda dari B ke A' ialah:",
+"opts": [
+"Minor ke-7",
+"Major ke-7",
+"Perfek ke-8",
+"Perfek ke-5"
+],
+"ans": 0,
+"topik": "Jeda",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L301",
+"q": "Meter 2/4 tergolong dalam meter:",
+"opts": [
+"Duple mudah",
+"Triple mudah",
+"Duple majmuk",
+"Quadruple majmuk"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L302",
+"q": "Meter 3/4 tergolong dalam meter:",
+"opts": [
+"Duple",
+"Triple",
+"Quadruple",
+"Duple majmuk"
+],
+"ans": 1,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L303",
+"q": "Meter 6/8 tergolong dalam meter:",
+"opts": [
+"Duple mudah",
+"Triple mudah",
+"Duple majmuk",
+"Quadruple mudah"
+],
+"ans": 2,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L304",
+"q": "Angka bawah 4 dalam 4/4 merujuk kepada not:",
+"opts": [
+"Minim",
+"Krocet",
+"Kuaver",
+"Semibrif"
+],
+"ans": 1,
+"topik": "Teori Muzik",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L305",
+"q": "Dalam meter 3/8, satu bar penuh mengandungi:",
+"opts": [
+"3 kuaver",
+"3 minim",
+"6 krocet",
+"8 kuaver"
+],
+"ans": 0,
+"topik": "Meter",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L306",
+"q": "Apakah maksud adagio?",
+"opts": [
+"Perlahan",
+"Cepat",
+"Sangat kuat",
+"Semakin kuat"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L307",
+"q": "Apakah maksud rallentando?",
+"opts": [
+"Semakin cepat",
+"Semakin perlahan",
+"Semakin kuat",
+"Dengan semangat"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L308",
+"q": "Apakah maksud dolce?",
+"opts": [
+"Dengan manis atau lembut",
+"Dengan sangat kuat",
+"Dengan cepat",
+"Dengan pendek dan terpisah"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L309",
+"q": "Apakah maksud solo?",
+"opts": [
+"Semua pemain bermain bersama",
+"Bahagian untuk seorang pemain atau penyanyi",
+"Nyanyian tanpa iringan",
+"Muzik dimainkan perlahan"
+],
+"ans": 1,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L310",
+"q": "Apakah fungsi tanda repeat?",
+"opts": [
+"Mengulang bahagian muzik yang ditandakan",
+"Menukar tanda nada",
+"Menukar klef",
+"Menghentikan muzik"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L311",
+"q": "Apakah maksud legato?",
+"opts": [
+"Not dimainkan lancar dan bersambung",
+"Not dimainkan pendek",
+"Bunyi semakin kuat",
+"Tempo semakin perlahan"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+},
+{
+"id": "L312",
+"q": "Apakah maksud tacet?",
+"opts": [
+"Bahagian itu tidak dimainkan atau senyap",
+"Main semakin cepat",
+"Main dengan kuat",
+"Ulang dari awal"
+],
+"ans": 0,
+"topik": "Terminologi",
+"tahap": "UMUM",
+"sumber": "5 Set Tambahan Teori Muzik (40 Soalan) (Set 8)"
+}
+]
